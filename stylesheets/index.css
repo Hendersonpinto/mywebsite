@@ -1,0 +1,15 @@
+body, html {
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+}
+body #bg {
+  clip-path: polygon(100% 0, 100% 35%, 40% 100%, 0 100%, 0 0);
+  background-color: #005DFF;
+  height: 100%;
+  width: 100%;
+}
+
+/*# sourceMappingURL=index.css.map */

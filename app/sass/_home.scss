@@ -1,0 +1,25 @@
+$colors: (
+    primary: #005DFF,
+    accent: #FFF6BB,
+);
+
+@function color ($color-name) {
+    @return map-get($colors, $color-name)
+}
+
+body, html {
+    height: 100vh;
+}
+
+body {
+    margin:0;
+    // font-family: 'Montserrat';
+    #bg{
+        clip-path: polygon(100% 0, 100% 35%, 40% 100%, 0 100%, 0 0);
+        background-color: color(primary);
+        height: 100%;
+        width: 100%;
+        // position: absolute;
+        // z-index: -1;
+    }
+}
