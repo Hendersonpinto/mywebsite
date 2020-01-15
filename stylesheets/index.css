@@ -6,10 +6,19 @@ body {
   margin: 0;
 }
 body #bg {
-  clip-path: polygon(100% 0, 100% 35%, 40% 100%, 0 100%, 0 0);
   background-color: #005DFF;
   height: 100%;
   width: 100%;
+}
+
+#bgvid {
+  width: 100% !important;
+}
+
+video {
+  object-fit: cover !important;
+  display: inline-block;
+  vertical-align: baseline;
 }
 
 /*# sourceMappingURL=index.css.map */
