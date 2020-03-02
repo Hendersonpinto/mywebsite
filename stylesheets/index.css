@@ -1,23 +1,45 @@
-body, html {
-  height: 100vh;
-}
-
-body {
-  margin: 0;
-}
-body #bg {
+body,
+html {
   height: 100%;
+  margin: 0;
+  color: white;
+  font-family: 'Montserrat';
+}
+
+body .banner {
+  height: 100vh;
+  background: url("../app/images/untitled (8).svg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+body a {
+  text-decoration: none;
+  color: white;
+}
+
+body a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+body .navbar {
+  position: fixed;
+  top: 0;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 50px;
+  background-color: rgba(182, 74, 74, 0);
 }
 
-#bgvid {
-  width: 100% !important;
+body .navbar__actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
 }
-
-video {
-  object-fit: cover !important;
-  display: inline-block;
-  vertical-align: baseline;
-}
-
 /*# sourceMappingURL=index.css.map */

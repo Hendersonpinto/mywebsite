@@ -1,5 +1,4 @@
-$colors: (
-    primary: #005DFF,
+$colors: (primary: #005DFF,
     accent: #FFF6BB,
 );
 
@@ -7,31 +6,58 @@ $colors: (
     @return map-get($colors, $color-name)
 }
 
-body, html {
-    height: 100vh;
+body,
+html {
+    height: 100%;
+    margin: 0;
+    color: white;
+    font-family: 'Montserrat';
 }
 
 body {
-    margin:0;
-    // font-family: 'Montserrat';
-    #bg{
-        // clip-path: polygon(100% 0, 100% 35%, 40% 100%, 0 100%, 0 0);
-        // background-color: color(primary);
-        height: 100%;
-        width: 100%;
-        // position: absolute;
-        // z-index: -1;
+
+    .banner {
+        height: 100vh;
+        background: url('../app/images/untitled\ \(8\).svg') no-repeat;
+        background-position: center;
+        background-size: cover;
     }
-}
 
-#bgvid {
-    width:100% !important;
-}
+    a {
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+            text-decoration: none;
+            color: white
+        }
+    }
+
+    // #bg {
+    //     // clip-path: polygon(100% 0, 100% 35%, 40% 100%, 0 100%, 0 0);
+    //     // background-color: color(primary);
+    //     height: 100%;
+    //     width: 100%;
+    //     // position: absolute;
+    //     // z-index: -1;
+    // }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        $self: &;
+        display: flex;
+        justify-content: space-around;
+        padding: 50px;
+
+        background-color: rgba(182, 74, 74, 0);
+
+        &__actions {
+            display: flex;
+            list-style-type: none;
+        }
+    }
 
 
-
-video {
-    object-fit: cover!important;
-    display: inline-block;
-    vertical-align: baseline;
 }
