@@ -11,21 +11,88 @@ html {
     height: 100%;
     margin: 0;
     color: white;
-    font-family: 'Montserrat';
+    font-family: 'Roboto';
+    padding: 0;
+
 }
 
 body {
 
     .banner {
         height: 100vh;
-        background: url('../app/images/untitled\ \(8\).svg') no-repeat;
+        background: url('../app/images/Vector.svg') no-repeat;
         background-position: center;
         background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 70px;
+
+        h1 {
+            // font-family: 'Montserrat';
+            // font-family: 'Roboto Slab';
+            // font-family: 'Roboto';
+            // font-family: 'Gothic A1';
+            // font-family: 'Raleway';
+            font-family: 'Montserrat Alternates';
+            font-size: 70px;
+            font-weight: 700;
+            color: $mydarkblue;
+            text-align: center;
+            margin: 0;
+        }
+
+        #banner__animated-text {
+            color: $mywhite;
+            // text-shadow: 3px 0 rgba(0, 0, 0, 0.17), 0 3px rgba(0, 0, 0, 0.122), 1px 0 rgba(0, 0, 0, 0.493), 0 -1px rgba(0, 0, 0, 0.486);
+            animation: disappear 5s infinite;
+            animation-delay: -2500ms
+        }
+
+        @keyframes disappear {
+
+            0%,
+            100% {
+                opacity: 1
+            }
+
+            50% {
+                opacity: 0
+            }
+        }
+
+
+        &__content {
+            padding: 20px;
+            width: 100%;
+            display: flex;
+            height: 50%;
+            width: 100vw;
+            overflow: hidden;
+        }
+
+        #banner__image {
+            flex-grow: 2;
+            width: 50%
+        }
+
+        #banner__title {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-grow: 1;
+            transform: translateX(200px);
+
+            h1 {
+                font-size: 5vw;
+            }
+        }
     }
 
     a {
         text-decoration: none;
-        color: white;
+        color: $mygold;
 
         &:hover {
             text-decoration: none;
@@ -48,15 +115,24 @@ body {
         width: 100%;
         $self: &;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         padding: 50px;
 
         background-color: rgba(182, 74, 74, 0);
 
         &__actions {
+            width: 40%;
             display: flex;
+            justify-content: space-around;
             list-style-type: none;
+            font-family: 'Montserrat';
+            font-size: 24px;
+            font-weight: 500;
+            margin: 0;
+            padding: 0;
         }
+
+
     }
 
 
