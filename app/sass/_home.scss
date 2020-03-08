@@ -4,6 +4,10 @@ $colors: (primary: #005dff, accent: #fff6bb);
     @return map-get($colors, $color-name);
 }
 
+// * {
+//     border: 1px solid black;
+// }
+
 body,
 html {
     height: 100%;
@@ -11,6 +15,7 @@ html {
     color: white;
     font-family: 'Roboto';
     padding: 0;
+    color: black;
 }
 
 body {
@@ -72,11 +77,11 @@ body {
 
         #banner__image {
             // flex-grow: 1;
-            width: 50%;
+            width: 40%;
         }
 
         #banner__title {
-            width: 50%;
+            // width: 50%;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -84,10 +89,10 @@ body {
             transform: translateX(-2vw);
 
             // overflow: hidden;
-            // >div {
-            //     white-space: nowrap;
+            >div {
+                white-space: nowrap;
 
-            // }
+            }
 
             h1 {
                 font-size: 5vw;
@@ -95,7 +100,7 @@ body {
         }
 
         #banner__down-arrow {
-            width: 30px;
+            width: 70px;
 
             >img {
                 width: 100%;
@@ -104,15 +109,6 @@ body {
         }
     }
 
-    a {
-        text-decoration: none;
-        color: $mygold;
-
-        &:hover {
-            text-decoration: none;
-            color: white;
-        }
-    }
 
     // #bg {
     //     // clip-path: polygon(100% 0, 100% 35%, 40% 100%, 0 100%, 0 0);
@@ -124,6 +120,16 @@ body {
     // }
 
     .navbar {
+        a {
+            text-decoration: none;
+            color: $mygold;
+
+            &:hover {
+                text-decoration: none;
+                color: white;
+            }
+        }
+
         height: 70px;
         position: fixed;
         top: 0;
@@ -141,68 +147,76 @@ body {
             justify-content: space-around;
             list-style-type: none;
             font-family: 'Montserrat';
-            font-size: 24px;
+            font-size: 32px;
             font-weight: 500;
             margin: 0;
             padding: 0;
         }
     }
 
-    .section-title {
-        h2 {
-            font-family: Montserrat;
-            font-size: 4vw;
-            color: rgba(0, 0, 0, 0.75);
-            margin: 0;
-            font-weight: 400;
-        }
-
-        .separator {
-            margin: auto;
-            width: 100px;
-            height: 5px;
-            background-color: $mygold;
-        }
-    }
 
 
-    .about {
-        >span {
-            font-size: 1.5em;
-        }
-
+    .section {
         position: relative;
-
-        .vector {
-            z-index: -10;
-            position: absolute;
-            top: 30%;
-            left: 0px;
-            width: 50%;
-        }
-
-        height: 100vh;
+        min-height: 100vh;
         display: flex;
         flex-direction: column;
         // justify-content: center;
         align-items: center;
         $this: &;
+        margin-top: 30vh;
+
+        .section-title {
+            h2 {
+                font-family: Montserrat;
+                font-size: 4vw;
+                color: rgba(0, 0, 0, 0.75);
+                margin: 0;
+                font-weight: 400;
+            }
+
+            .separator {
+                margin: auto;
+                width: 50%;
+                height: 5px;
+                background-color: $mygold;
+            }
+        }
+
 
         &__content {
-            width: 100vw;
+            width: 100%;
             display: flex;
             margin: 70px auto;
             justify-content: center;
             align-items: center;
 
+        }
+
+        
+
+        &--about {
+
+            >span {
+                font-size: 1.5em;
+            }
+
+
+            .vector {
+                z-index: -10;
+                position: absolute;
+                top: 20%;
+                left: 0px;
+                width: 40%;
+            }
+
+
+
+
             .about__image {
-                z-index: 99;
                 width: 20%;
                 padding: 10px;
-
                 box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-
-
 
                 >img {
                     width: 100%;
@@ -217,15 +231,79 @@ body {
 
                 >p {
                     font-family: Montserrat;
-                    font-size: 24px;
+                    font-size: 32px;
                 }
 
                 .emoji {
                     font-size: 1.2em;
                 }
             }
-
-
         }
+
+        &--skillset {
+            .vector {
+                z-index: -10;
+                position: absolute;
+                top: 30%;
+                left: 0px;
+                width: 50%;
+            }
+
+            &__actions {
+                width: 50%;
+                display: flex;
+                justify-content: space-around;
+
+                .skill {
+                    width: 200px;
+                    transition: all 1s ease;
+                    text-align: center;
+                    cursor: pointer;
+
+                    span {
+                        transition: all 1s ease;
+                        opacity: 0;
+                        font-family: Montserrat;
+                        font-size: 1.2vw;
+                    }
+
+                    >img {
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    &:hover {
+                        transform: scale(1.5);
+
+                        span {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+
+            &__cards{
+                display: flex;
+
+            }
+        }
+
+
+
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
 }

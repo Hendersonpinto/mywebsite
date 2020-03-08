@@ -5,6 +5,7 @@ html {
   color: white;
   font-family: 'Roboto';
   padding: 0;
+  color: black;
 }
 
 body .banner {
@@ -80,11 +81,10 @@ body .banner__content {
 }
 
 body .banner #banner__image {
-  width: 50%;
+  width: 40%;
 }
 
 body .banner #banner__title {
-  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -102,27 +102,21 @@ body .banner #banner__title {
           transform: translateX(-2vw);
 }
 
+body .banner #banner__title > div {
+  white-space: nowrap;
+}
+
 body .banner #banner__title h1 {
   font-size: 5vw;
 }
 
 body .banner #banner__down-arrow {
-  width: 30px;
+  width: 70px;
 }
 
 body .banner #banner__down-arrow > img {
   width: 100%;
   height: auto;
-}
-
-body a {
-  text-decoration: none;
-  color: #da7f2a;
-}
-
-body a:hover {
-  text-decoration: none;
-  color: white;
 }
 
 body .navbar {
@@ -139,6 +133,16 @@ body .navbar {
   background-color: rgba(182, 74, 74, 0);
 }
 
+body .navbar a {
+  text-decoration: none;
+  color: #da7f2a;
+}
+
+body .navbar a:hover {
+  text-decoration: none;
+  color: white;
+}
+
 body .navbar__actions {
   width: 40%;
   display: -webkit-box;
@@ -148,30 +152,15 @@ body .navbar__actions {
       justify-content: space-around;
   list-style-type: none;
   font-family: 'Montserrat';
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 500;
   margin: 0;
   padding: 0;
 }
 
-body .section-title h2 {
-  font-family: Montserrat;
-  font-size: 4vw;
-  color: rgba(0, 0, 0, 0.75);
-  margin: 0;
-  font-weight: 400;
-}
-
-body .section-title .separator {
-  margin: auto;
-  width: 100px;
-  height: 5px;
-  background-color: #da7f2a;
-}
-
-body .about {
+body .section {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -182,22 +171,26 @@ body .about {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 30vh;
 }
 
-body .about > span {
-  font-size: 1.5em;
+body .section .section-title h2 {
+  font-family: Montserrat;
+  font-size: 4vw;
+  color: rgba(0, 0, 0, 0.75);
+  margin: 0;
+  font-weight: 400;
 }
 
-body .about .vector {
-  z-index: -10;
-  position: absolute;
-  top: 30%;
-  left: 0px;
+body .section .section-title .separator {
+  margin: auto;
   width: 50%;
+  height: 5px;
+  background-color: #da7f2a;
 }
 
-body .about__content {
-  width: 100vw;
+body .section__content {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -210,31 +203,89 @@ body .about__content {
           align-items: center;
 }
 
-body .about__content .about__image {
-  z-index: 99;
+body .section--about > span {
+  font-size: 1.5em;
+}
+
+body .section--about .vector {
+  z-index: -10;
+  position: absolute;
+  top: 20%;
+  left: 0px;
+  width: 40%;
+}
+
+body .section--about .about__image {
   width: 20%;
   padding: 10px;
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-body .about__content .about__image > img {
+body .section--about .about__image > img {
   width: 100%;
   height: auto;
 }
 
-body .about__content .about__text {
+body .section--about .about__text {
   width: 70%;
   color: black;
   margin-left: 50px;
 }
 
-body .about__content .about__text > p {
+body .section--about .about__text > p {
   font-family: Montserrat;
-  font-size: 24px;
+  font-size: 32px;
 }
 
-body .about__content .about__text .emoji {
+body .section--about .about__text .emoji {
   font-size: 1.2em;
+}
+
+body .section--skillset .vector {
+  z-index: -10;
+  position: absolute;
+  top: 30%;
+  left: 0px;
+  width: 50%;
+}
+
+body .section--skillset__actions {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body .section--skillset__actions .skill {
+  width: 200px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  text-align: center;
+  cursor: pointer;
+}
+
+body .section--skillset__actions .skill span {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  opacity: 0;
+  font-family: Montserrat;
+  font-size: 1.2vw;
+}
+
+body .section--skillset__actions .skill > img {
+  width: 100%;
+  height: auto;
+}
+
+body .section--skillset__actions .skill:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+body .section--skillset__actions .skill:hover span {
+  opacity: 1;
 }
 /*# sourceMappingURL=index.css.map */
