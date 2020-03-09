@@ -1,8 +1,35 @@
 .footer {
+    margin-top: 200px;
     width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
 
-    img {
-        width: 30%;
+
+    .footer__vector {
+        width: 90%;
         height: auto;
+        z-index: -10;
+        position: absolute;
+    }
+
+
+    &__wrapper {
+        width: 60%;
+    }
+
+    .contact {
+        display: flex;
+
+        p {
+            font-size: 2vw;
+            margin: 10px;
+            color: #CBCBCB;
+        }
+
+        .media_icon {
+            width: 40px;
+        }
     }
 }

@@ -19,6 +19,13 @@ html a:hover {
   text-decoration: none;
 }
 
+body p,
+html p {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+}
+
 body .banner {
   height: 100vh;
   background: url("../app/images/Vector.svg") no-repeat;
@@ -494,5 +501,46 @@ body .section--projects .section__content {
 
 .project .project__button:hover {
   background-color: #da7f2a;
+}
+
+.footer {
+  margin-top: 200px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 500px;
+}
+
+.footer .footer__vector {
+  width: 90%;
+  height: auto;
+  z-index: -10;
+  position: absolute;
+}
+
+.footer__wrapper {
+  width: 60%;
+}
+
+.footer .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .contact p {
+  font-size: 2vw;
+  margin: 10px;
+  color: #CBCBCB;
+}
+
+.footer .contact .media_icon {
+  width: 40px;
 }
 /*# sourceMappingURL=index.css.map */
