@@ -1,0 +1,113 @@
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20vh;
+
+    .project__wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        .project__info {
+            width: 40%;
+            text-align: left;
+
+            .emoji {
+                font-size: 1.5em;
+            }
+
+            h2 {
+                font-family: Lato;
+                font-size: 36px;
+            }
+
+            h2:first-letter {
+                font-size: 200%;
+            }
+
+            p {
+                font-family: Montserrat;
+                font-weight: 400;
+                font-size: 26px;
+            }
+        }
+
+        .project__image {
+            width: 50%;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &--inversed {
+            .project__info {
+                width: 40%;
+                text-align: right;
+
+                .emoji {
+                    font-size: 1.5em;
+                }
+
+                h2 {
+                    font-family: Lato;
+                    font-size: 36px;
+                }
+
+                h2:first-letter {
+                    font-size: 200%;
+                }
+
+                p {
+                    font-family: Montserrat;
+                    font-weight: 400;
+                    font-size: 26px;
+                }
+            }
+
+            .project__image {
+                width: 50%;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+
+        .vector {
+            z-index: -10;
+            position: absolute;
+            bottom: 0%;
+            left: 0%;
+            width: 23%;
+
+            &--inversed {
+                left: 70%;
+            }
+        }
+    }
+
+    .project__button {
+        position: relative;
+        // top: -70px;
+        margin: auto;
+        background-color: $mygold;
+        box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.3);
+        color: white;
+        border-radius: 10px;
+        padding: 15px 20px;
+        background-color: #da7f2a;
+        font-family: Montserrat;
+        font-size: 20px;
+        // transition: all 5s ease;
+
+
+        &:hover {
+            background-color: $mygold;
+        }
+    }
+}

@@ -8,6 +8,17 @@ html {
   color: black;
 }
 
+body a,
+html a {
+  text-decoration: none;
+  color: black;
+}
+
+body a:hover,
+html a:hover {
+  text-decoration: none;
+}
+
 body .banner {
   height: 100vh;
   background: url("../app/images/Vector.svg") no-repeat;
@@ -235,7 +246,7 @@ body .section--about .about__text {
 
 body .section--about .about__text > p {
   font-family: Montserrat;
-  font-size: 32px;
+  font-size: 24px;
 }
 
 body .section--about .about__text .emoji {
@@ -300,6 +311,13 @@ body .section--skillset__cards {
       justify-content: space-around;
 }
 
+body .section--projects .section__content {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .skillcard {
   width: 25%;
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -341,5 +359,126 @@ body .section--skillset__cards {
   position: absolute;
   top: 20%;
   left: -4%;
+}
+
+.project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20vh;
+}
+
+.project .project__wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.project .project__wrapper .project__info {
+  width: 40%;
+  text-align: left;
+}
+
+.project .project__wrapper .project__info .emoji {
+  font-size: 1.5em;
+}
+
+.project .project__wrapper .project__info h2 {
+  font-family: Lato;
+  font-size: 36px;
+}
+
+.project .project__wrapper .project__info h2:first-letter {
+  font-size: 200%;
+}
+
+.project .project__wrapper .project__info p {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 26px;
+}
+
+.project .project__wrapper .project__image {
+  width: 50%;
+}
+
+.project .project__wrapper .project__image img {
+  width: 100%;
+  height: auto;
+}
+
+.project .project__wrapper--inversed .project__info {
+  width: 40%;
+  text-align: right;
+}
+
+.project .project__wrapper--inversed .project__info .emoji {
+  font-size: 1.5em;
+}
+
+.project .project__wrapper--inversed .project__info h2 {
+  font-family: Lato;
+  font-size: 36px;
+}
+
+.project .project__wrapper--inversed .project__info h2:first-letter {
+  font-size: 200%;
+}
+
+.project .project__wrapper--inversed .project__info p {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 26px;
+}
+
+.project .project__wrapper--inversed .project__image {
+  width: 50%;
+}
+
+.project .project__wrapper--inversed .project__image img {
+  width: 100%;
+  height: auto;
+}
+
+.project .project__wrapper .vector {
+  z-index: -10;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  width: 23%;
+}
+
+.project .project__wrapper .vector--inversed {
+  left: 70%;
+}
+
+.project .project__button {
+  position: relative;
+  margin: auto;
+  background-color: #da7f2a;
+  -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.3);
+  color: white;
+  border-radius: 10px;
+  padding: 15px 20px;
+  background-color: #da7f2a;
+  font-family: Montserrat;
+  font-size: 20px;
+}
+
+.project .project__button:hover {
+  background-color: #da7f2a;
 }
 /*# sourceMappingURL=index.css.map */
