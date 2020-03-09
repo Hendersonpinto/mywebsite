@@ -309,6 +309,8 @@ body .section--skillset__cards {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 body .section--projects .section__content {
@@ -412,6 +414,13 @@ body .section--projects .section__content {
 
 .project .project__wrapper .project__image {
   width: 50%;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+.project .project__wrapper .project__image:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .project .project__wrapper .project__image img {
@@ -445,6 +454,11 @@ body .section--projects .section__content {
 
 .project .project__wrapper--inversed .project__image {
   width: 50%;
+}
+
+.project .project__wrapper--inversed .project__image:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .project .project__wrapper--inversed .project__image img {

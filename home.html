@@ -34,6 +34,9 @@
             </li>
         </ul>
     </div>
+
+
+
     <div class="banner">
         <div class="banner__content">
             <img id="banner__image" src="/app/images/proud8.svg">
@@ -49,6 +52,9 @@
             <img src="/app/images/down_arrow.svg" alt="">
         </div>
     </div>
+
+
+
 
     <div class="section section--about">
         <img src="/app/images/vector_about.svg" alt="" class="vector">
@@ -79,6 +85,9 @@
     </div>
 
 
+
+
+
     <div class="section section--skillset">
         <img src="/app/images/vector_skillset.svg" alt="" class="vector">
         <div class="section-title">
@@ -87,20 +96,20 @@
         </div>
         <div class="section__content" style="flex-direction:column">
             <div class="section--skillset__actions">
-                <div class="skill">
+                <div class="skill" data-skill="frontend">
                     <img src="/app/images/frontendskill.svg" alt="">
                     <span>Front-end</span>
                 </div>
-                <div class="skill">
+                <div class="skill" data-skill="backend">
                     <img src="/app/images/dbskill.svg" alt="">
                     <span>Back-end</span>
                 </div>
-                <div class="skill">
+                <div class="skill" data-skill="ux">
                     <img src="/app/images/uxskill.svg" alt="">
                     <span>UX design</span>
 
                 </div>
-                <div class="skill">
+                <div class="skill" data-skill="management">
                     <img src="/app/images/projectskill.svg" alt="">
                     <span>Project management</span>
 
@@ -135,9 +144,12 @@
             <div class="separator"></div>
         </div>
         <div class="section__content">
+
+
+
             <div class="project">
                 <div class="project__wrapper">
-                    <img src="app/images/show1.svg" class="vector" alt="">
+                    <!-- <img src="app/images/show1.svg" class="vector" alt=""> -->
                     <div class="project__info">
                         <h2>Cinemapp <span class="emoji">🎥</span></h2>
                         <p>Perfect for cinema lovers on a tight budget! A progressive web app designed as mobile-first.
@@ -155,7 +167,7 @@
 
             <div class="project">
                 <div class="project__wrapper project__wrapper--inversed">
-                    <img src="app/images/show2.svg" class="vector vector--inversed" alt="">
+                    <!-- <img src="app/images/show2.svg" class="vector vector--inversed" alt=""> -->
                     <div class="project__image">
                         <img src="app/images/caracasbar.png" alt="Caracas Bar showcase">
                     </div>
@@ -175,11 +187,9 @@
                 <!-- <button class="project__button">Check it out!</button> -->
             </div>
 
-
-
             <div class="project">
                 <div class="project__wrapper">
-                    <img src="app/images/show3.svg" class="vector" alt="">
+                    <!-- <img src="app/images/show3.svg" class="vector" alt=""> -->
                     <div class="project__info">
                         <h2>MammaMia <span class="emoji">👵🏻</span></h2>
                         <p>Because we all deserve a mom whenever and wherever we are. Desktop-first marketplace app
@@ -198,11 +208,39 @@
     </div>
 
 
+    <div class="footer">
+        <img src="app/images/footer.svg" class="footer__vector" alt="">
+        <div class="socialmedia">
+            <div class="contact">
+                <img src="" alt="">
+                <p>Check out my repositories</p>
+            </div>
+            <div class="contact">
+                <img src="" alt="">
+                <p>Want so more info?</p>
+            </div>
+            <div class="contact">
+                <img src="" alt="">
+                <p>My favorites while coding</p>
+            </div>
+            <div class="contact">
+                <img src="" alt="">
+                <p>Travel and hobbies</p>
+            </div>
+            <div class="contact">
+                <img src="" alt="">
+                <p>Don't hesitate to contact me</p>
+            </div>
+        </div>
+    </div>
+
+
 
     <!-- Loading JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- Loading my own JS -->
     <script src="/app/javascript/changeText.js"></script>
+    <script src="/app/javascript/updatecards.js"></script>
     <!-- Loading Bootstrap JS bundle -->
     <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" -->
     <!-- integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"> -->
