@@ -54,7 +54,7 @@ body {
             // font-family: 'Gothic A1';
             // font-family: 'Raleway';
             font-family: 'Montserrat Alternates';
-            font-size: 70px;
+            font-size: 56px;
             font-weight: 700;
             color: $mydarkblue;
             text-align: center;
@@ -116,7 +116,7 @@ body {
         }
 
         #banner__down-arrow {
-            width: 70px;
+            width: 30px;
 
             >img {
                 width: 100%;
@@ -163,7 +163,7 @@ body {
             justify-content: space-around;
             list-style-type: none;
             font-family: 'Montserrat';
-            font-size: 32px;
+            font-size: 20px;
             font-weight: 500;
             margin: 0;
             padding: 0;
@@ -201,7 +201,7 @@ body {
 
 
         &__content {
-            width: 85%;
+            width: 80%;
             display: flex;
             margin: 70px auto;
             justify-content: center;
@@ -247,7 +247,7 @@ body {
 
                 >p {
                     font-family: Montserrat;
-                    font-size: 24px;
+                    font-size: 20px;
                 }
 
                 .emoji {

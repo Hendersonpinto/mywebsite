@@ -49,7 +49,7 @@ body .banner {
 
 body .banner h1 {
   font-family: 'Montserrat Alternates';
-  font-size: 70px;
+  font-size: 56px;
   font-weight: 700;
   color: #01112D;
   text-align: center;
@@ -129,7 +129,7 @@ body .banner #banner__title h1 {
 }
 
 body .banner #banner__down-arrow {
-  width: 70px;
+  width: 30px;
 }
 
 body .banner #banner__down-arrow > img {
@@ -170,7 +170,7 @@ body .navbar__actions {
       justify-content: space-around;
   list-style-type: none;
   font-family: 'Montserrat';
-  font-size: 32px;
+  font-size: 20px;
   font-weight: 500;
   margin: 0;
   padding: 0;
@@ -208,7 +208,7 @@ body .section .section-title .separator {
 }
 
 body .section__content {
-  width: 85%;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -253,7 +253,7 @@ body .section--about .about__text {
 
 body .section--about .about__text > p {
   font-family: Montserrat;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 body .section--about .about__text .emoji {
