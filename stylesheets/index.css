@@ -401,7 +401,7 @@ body .section--projects .section__content {
 }
 
 .project .project__wrapper .project__info .emoji {
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 .project .project__wrapper .project__info h2 {
@@ -441,7 +441,7 @@ body .section--projects .section__content {
 }
 
 .project .project__wrapper--inversed .project__info .emoji {
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 .project .project__wrapper--inversed .project__info h2 {
