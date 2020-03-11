@@ -1,7 +1,7 @@
 .skillcard {
     width: 25%;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    border-radius: 10px 100px / 120px;
+    border-radius: 10px;
     // border-radius: 30px;
     display: flex;
     flex-direction: column;
@@ -14,13 +14,14 @@
 
     &__title {
         font-family: Roboto Slab;
-        font-size: 32px;
+        font-size: 24px;
         color: #6A6A6A;
+        text-align: center;
     }
 
     &__content {
-        width: 70%;
-        font-size: 24px;
+        // width: 100%;
+        font-size: 14px;
         text-align: center;
     }
 

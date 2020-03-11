@@ -22,7 +22,7 @@ html a:hover {
 body p,
 html p {
   font-family: Montserrat;
-  font-size: 24px;
+  font-size: 14px;
   font-weight: 400;
 }
 
@@ -253,7 +253,7 @@ body .section--about .about__text {
 
 body .section--about .about__text > p {
   font-family: Montserrat;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 body .section--about .about__text .emoji {
@@ -331,7 +331,7 @@ body .section--projects .section__content {
   width: 25%;
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  border-radius: 10px 100px / 120px;
+  border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -353,13 +353,13 @@ body .section--projects .section__content {
 
 .skillcard__title {
   font-family: Roboto Slab;
-  font-size: 32px;
+  font-size: 24px;
   color: #6A6A6A;
+  text-align: center;
 }
 
 .skillcard__content {
-  width: 70%;
-  font-size: 24px;
+  font-size: 14px;
   text-align: center;
 }
 
@@ -416,7 +416,7 @@ body .section--projects .section__content {
 .project .project__wrapper .project__info p {
   font-family: Montserrat;
   font-weight: 400;
-  font-size: 26px;
+  font-size: 18px;
 }
 
 .project .project__wrapper .project__image {
@@ -456,7 +456,7 @@ body .section--projects .section__content {
 .project .project__wrapper--inversed .project__info p {
   font-family: Montserrat;
   font-weight: 400;
-  font-size: 26px;
+  font-size: 18px;
 }
 
 .project .project__wrapper--inversed .project__image {
