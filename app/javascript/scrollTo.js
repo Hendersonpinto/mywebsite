@@ -10,7 +10,7 @@ function scrollTo() {
 
     console.log(this.dataset.linkto)
     window.scroll({
-        top: sections[this.dataset.linkto].offsetTop - 30,
+        top: sections[this.dataset.linkto].offsetTop - 60,
         left: 0,
         behavior: 'smooth'
     });

@@ -1,7 +1,7 @@
 .navbar {
 
 	z-index: 10000;
-	height: 55px;
+	height: 40px;
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -9,11 +9,16 @@
 	display: flex;
 	justify-content: space-between;
 	// padding: 50px;
+	transition: all 1s ease-in-out;
 
-	// background-color: rgba(255, 255, 255, 0);
+	background-color: rgba(255, 255, 255, 0);
 	// background-color: #4BCAC3;
 	// background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(76, 119, 177, 1) 2%, rgba(0, 255, 184, 1) 100%);
 	background: linear-gradient(90deg, rgba(76, 169, 177, 1) 0%, rgba(0, 255, 184, 1) 100%);
+
+	&--active {
+		background: linear-gradient(90deg, rgba(76, 169, 177, 1) 0%, rgba(0, 255, 184, 1) 100%);
+	}
 
 	&__actions {
 		width: 30%;
@@ -24,6 +29,12 @@
 		font-weight: 600;
 		margin: 0;
 		padding: 0;
+
+		.navbar__item {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
 	}
 
 	&__link {
@@ -35,5 +46,6 @@
 		color: white;
 		cursor: pointer;
 		font-weight: 600;
+		margin: 0px;
 	}
 }
