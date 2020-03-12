@@ -506,6 +506,7 @@ body .section--projects .section__content {
 }
 
 .footer .contact {
+  cursor: pointer;
   margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
