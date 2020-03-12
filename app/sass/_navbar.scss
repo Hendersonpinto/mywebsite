@@ -1,0 +1,36 @@
+.navbar {
+
+	z-index: 10000;
+	height: 55px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	$self: &;
+	display: flex;
+	justify-content: space-between;
+	// padding: 50px;
+
+	// background-color: rgba(255, 255, 255, 0);
+	// background-color: #4BCAC3;
+	// background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(76, 119, 177, 1) 2%, rgba(0, 255, 184, 1) 100%);
+	background: linear-gradient(90deg, rgba(76, 169, 177, 1) 0%, rgba(0, 255, 184, 1) 100%);
+
+	&__actions {
+		width: 30%;
+		display: flex;
+		justify-content: space-around;
+		list-style-type: none;
+
+		font-weight: 600;
+		margin: 0;
+		padding: 0;
+	}
+
+	&__link {
+		font-family: 'Montserrat';
+		font-size: 16px;
+		color: white;
+		cursor: pointer;
+		font-weight: 600;
+	}
+}

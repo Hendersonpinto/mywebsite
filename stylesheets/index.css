@@ -51,13 +51,13 @@ body .banner h1 {
   font-family: 'Montserrat Alternates';
   font-size: 56px;
   font-weight: 700;
-  color: #01112D;
+  color: white;
   text-align: center;
   margin: 0;
 }
 
 body .banner #banner__animated-text {
-  color: #FFFBEF;
+  color: #01112D;
   -webkit-animation: disappear 5s infinite;
           animation: disappear 5s infinite;
   -webkit-animation-delay: -2500ms;
@@ -125,7 +125,7 @@ body .banner #banner__title > div {
 }
 
 body .banner #banner__title h1 {
-  font-size: 5vw;
+  font-size: 48px;
 }
 
 body .banner #banner__down-arrow {
@@ -135,45 +135,6 @@ body .banner #banner__down-arrow {
 body .banner #banner__down-arrow > img {
   width: 100%;
   height: auto;
-}
-
-body .navbar {
-  height: 70px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background-color: rgba(182, 74, 74, 0);
-}
-
-body .navbar a {
-  text-decoration: none;
-  color: #da7f2a;
-}
-
-body .navbar a:hover {
-  text-decoration: none;
-  color: white;
-}
-
-body .navbar__actions {
-  width: 40%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  list-style-type: none;
-  font-family: 'Montserrat';
-  font-size: 20px;
-  font-weight: 500;
-  margin: 0;
-  padding: 0;
 }
 
 body .section {
@@ -189,12 +150,12 @@ body .section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 30vh;
+  margin-top: 100px;
 }
 
 body .section .section-title h2 {
   font-family: Montserrat;
-  font-size: 4vw;
+  font-size: 32px;
   color: rgba(0, 0, 0, 0.75);
   margin: 0;
   font-weight: 400;
@@ -269,8 +230,8 @@ body .section--skillset .vector {
 }
 
 body .section--skillset__actions {
-  margin-bottom: 70px;
-  width: 50%;
+  margin-bottom: 10px;
+  width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -279,6 +240,7 @@ body .section--skillset__actions {
 }
 
 body .section--skillset__actions .skill {
+  position: relative;
   width: 200px;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
@@ -287,11 +249,16 @@ body .section--skillset__actions .skill {
 }
 
 body .section--skillset__actions .skill span {
+  width: 150%;
+  position: absolute;
+  top: -10%;
+  left: -25%;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
   opacity: 0;
   font-family: Montserrat;
-  font-size: 1.2vw;
+  font-size: 10px;
+  text-align: center;
 }
 
 body .section--skillset__actions .skill > img {
@@ -300,11 +267,20 @@ body .section--skillset__actions .skill > img {
 }
 
 body .section--skillset__actions .skill:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+body .section--skillset__actions .skill:hover span {
+  opacity: 1;
+}
+
+body .section--skillset__actions .skill.active {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
 }
 
-body .section--skillset__actions .skill:hover span {
+body .section--skillset__actions .skill.active span {
   opacity: 1;
 }
 
@@ -316,8 +292,8 @@ body .section--skillset__cards {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
 }
 
 body .section--projects .section__content {
@@ -328,7 +304,7 @@ body .section--projects .section__content {
 }
 
 .skillcard {
-  width: 25%;
+  width: 24%;
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   border-radius: 10px;
@@ -354,7 +330,7 @@ body .section--projects .section__content {
 .skillcard__title {
   font-family: Roboto Slab;
   font-size: 24px;
-  color: #6A6A6A;
+  color: #6a6a6a;
   text-align: center;
 }
 
@@ -364,7 +340,7 @@ body .section--projects .section__content {
 }
 
 .skillcard__label {
-  width: 15%;
+  width: 12%;
   position: absolute;
   top: 20%;
   left: -4%;
@@ -389,9 +365,11 @@ body .section--projects .section__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
 }
 
@@ -406,7 +384,7 @@ body .section--projects .section__content {
 
 .project .project__wrapper .project__info h2 {
   font-family: Lato;
-  font-size: 36px;
+  font-size: 28px;
 }
 
 .project .project__wrapper .project__info h2:first-letter {
@@ -416,11 +394,11 @@ body .section--projects .section__content {
 .project .project__wrapper .project__info p {
   font-family: Montserrat;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .project .project__wrapper .project__image {
-  width: 50%;
+  width: 40%;
   -webkit-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
 }
@@ -446,7 +424,7 @@ body .section--projects .section__content {
 
 .project .project__wrapper--inversed .project__info h2 {
   font-family: Lato;
-  font-size: 36px;
+  font-size: 28px;
 }
 
 .project .project__wrapper--inversed .project__info h2:first-letter {
@@ -456,11 +434,11 @@ body .section--projects .section__content {
 .project .project__wrapper--inversed .project__info p {
   font-family: Montserrat;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .project .project__wrapper--inversed .project__image {
-  width: 50%;
+  width: 40%;
 }
 
 .project .project__wrapper--inversed .project__image:hover {
@@ -493,10 +471,10 @@ body .section--projects .section__content {
           box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.3);
   color: white;
   border-radius: 10px;
-  padding: 15px 20px;
+  padding: 8px 16px;
   background-color: #da7f2a;
   font-family: Montserrat;
-  font-size: 20px;
+  font-size: 14px;
 }
 
 .project .project__button:hover {
@@ -504,7 +482,6 @@ body .section--projects .section__content {
 }
 
 .footer {
-  margin-top: 200px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -514,14 +491,14 @@ body .section--projects .section__content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 500px;
 }
 
 .footer .footer__vector {
-  width: 90%;
+  width: 70%;
   height: auto;
   z-index: -10;
   position: absolute;
+  left: 70px;
 }
 
 .footer__wrapper {
@@ -529,18 +506,56 @@ body .section--projects .section__content {
 }
 
 .footer .contact {
+  margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .footer .contact p {
-  font-size: 2vw;
+  font-size: 16px;
   margin: 10px;
   color: #CBCBCB;
 }
 
 .footer .contact .media_icon {
-  width: 40px;
+  width: 30px;
+}
+
+.navbar {
+  z-index: 10000;
+  height: 55px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: -webkit-gradient(linear, left top, right top, from(#4ca9b1), to(#00ffb8));
+  background: linear-gradient(90deg, #4ca9b1 0%, #00ffb8 100%);
+}
+
+.navbar__actions {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style-type: none;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__link {
+  font-family: 'Montserrat';
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
 }
 /*# sourceMappingURL=index.css.map */

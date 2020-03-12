@@ -7,7 +7,8 @@
     .project__wrapper {
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        align-items: center;
         position: relative;
 
         .project__info {
@@ -20,7 +21,7 @@
 
             h2 {
                 font-family: Lato;
-                font-size: 36px;
+                font-size: 28px;
             }
 
             h2:first-letter {
@@ -30,12 +31,12 @@
             p {
                 font-family: Montserrat;
                 font-weight: 400;
-                font-size: 18px;
+                font-size: 16px;
             }
         }
 
         .project__image {
-            width: 50%;
+            width: 40%;
 
             transition: all 500ms ease-in-out;
 
@@ -60,7 +61,7 @@
 
                 h2 {
                     font-family: Lato;
-                    font-size: 36px;
+                    font-size: 28px;
                 }
 
                 h2:first-letter {
@@ -70,12 +71,12 @@
                 p {
                     font-family: Montserrat;
                     font-weight: 400;
-                    font-size: 18px;
+                    font-size: 16px;
                 }
             }
 
             .project__image {
-                width: 50%;
+                width: 40%;
 
                 &:hover {
                     transform: scale(1.1);
@@ -109,12 +110,11 @@
         box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.3);
         color: white;
         border-radius: 10px;
-        padding: 15px 20px;
+        padding: 8px 16px;
         background-color: #da7f2a;
         font-family: Montserrat;
-        font-size: 20px;
+        font-size: 14px;
         // transition: all 5s ease;
-
 
         &:hover {
             background-color: $mygold;

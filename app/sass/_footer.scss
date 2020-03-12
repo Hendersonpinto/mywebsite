@@ -1,17 +1,16 @@
 .footer {
-    margin-top: 200px;
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 500px;
 
 
     .footer__vector {
-        width: 90%;
+        width: 70%;
         height: auto;
         z-index: -10;
         position: absolute;
+        left: 70px;
     }
 
 
@@ -20,16 +19,17 @@
     }
 
     .contact {
+        margin-top: 10px;
         display: flex;
 
         p {
-            font-size: 2vw;
+            font-size: 16px;
             margin: 10px;
             color: #CBCBCB;
         }
 
         .media_icon {
-            width: 40px;
+            width: 30px;
         }
     }
 }
