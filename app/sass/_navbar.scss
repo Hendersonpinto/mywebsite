@@ -27,6 +27,9 @@
 	}
 
 	&__link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		font-family: 'Montserrat';
 		font-size: 16px;
 		color: white;
