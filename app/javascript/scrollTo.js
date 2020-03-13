@@ -1,3 +1,4 @@
+const sideNavButtons = document.querySelectorAll('.sideNavbar__item')
 const navButtons = document.querySelectorAll('.navbar__link')
 
 const sections = {
@@ -16,6 +17,9 @@ function scrollTo() {
     });
 }
 
+sideNavButtons.forEach(button => {
+    button.addEventListener('click', scrollTo)
+})
 navButtons.forEach(button => {
     button.addEventListener('click', scrollTo)
 })

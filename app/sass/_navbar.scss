@@ -2,7 +2,7 @@
 
 	z-index: 10000;
 	height: 40px;
-	position: fixed;
+	position: absolute;
 	top: 0;
 	width: 100%;
 	$self: &;
@@ -14,14 +14,15 @@
 	background-color: rgba(255, 255, 255, 0);
 	// background-color: #4BCAC3;
 	// background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(76, 119, 177, 1) 2%, rgba(0, 255, 184, 1) 100%);
-	background: linear-gradient(90deg, rgba(76, 169, 177, 1) 0%, rgba(0, 255, 184, 1) 100%);
+	// background: linear-gradient(90deg, rgba(76, 169, 177, 1) 0%, rgba(0, 255, 184, 1) 100%);
 
-	&--active {
+	&.active {
+		transition: all 1s ease-in-out;
 		background: linear-gradient(90deg, rgba(76, 169, 177, 1) 0%, rgba(0, 255, 184, 1) 100%);
 	}
 
 	&__actions {
-		width: 30%;
+		width: 35%;
 		display: flex;
 		justify-content: space-around;
 		list-style-type: none;
@@ -34,6 +35,11 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
+
+			img {
+				width: 20px;
+				margin-right: 3px;
+			}
 		}
 	}
 
