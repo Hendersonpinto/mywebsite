@@ -575,8 +575,8 @@ body .section--projects .section__content {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-transition: all 800ms ease-in-out;
-  transition: all 800ms ease-in-out;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
   opacity: 0.0;
