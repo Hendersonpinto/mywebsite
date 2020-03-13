@@ -720,8 +720,14 @@ body .section--projects .section__content {
           justify-content: space-between;
 }
 
-.banner #banner__image {
-  width: 40%;
+.banner__content .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .banner #banner__title {

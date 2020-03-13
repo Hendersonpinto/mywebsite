@@ -52,11 +52,17 @@
         height: 50%;
         overflow: hidden;
         justify-content: space-between;
+
+        .row {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
     }
 
     #banner__image {
         // flex-grow: 1;
-        width: 40%;
+        // width: 40%;
     }
 
     #banner__title {
