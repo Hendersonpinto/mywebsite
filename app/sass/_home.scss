@@ -5,8 +5,13 @@ $colors: (primary: #005dff, accent: #fff6bb);
 }
 
 // * {
-//     border: 1px solid black;
+// 	border: 1px solid black;
 // }
+
+*::before,
+*::after {
+	box-sizing: content-box; // 1
+}
 
 body,
 html {
@@ -30,6 +35,8 @@ html {
 		font-family: Montserrat;
 		font-size: 14px;
 		font-weight: 500;
+		margin-block-start: 1em;
+		line-height: 1.2em;
 	}
 }
 

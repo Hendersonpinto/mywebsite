@@ -1,4 +1,4 @@
-.navbar {
+.topNavbar {
 
 	z-index: 10000;
 	height: 40px;
@@ -31,7 +31,7 @@
 		margin: 0;
 		padding: 0;
 
-		.navbar__item {
+		.topNavbar__item {
 			display: flex;
 			justify-content: center;
 			align-items: center;

@@ -1,3 +1,9 @@
+*::before,
+*::after {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
 body,
 html {
   height: 100%;
@@ -24,6 +30,9 @@ html p {
   font-family: Montserrat;
   font-size: 14px;
   font-weight: 500;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  line-height: 1.2em;
 }
 
 body #arrow {
@@ -214,6 +223,8 @@ body .section--projects .section__content {
 }
 
 .skillcard {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   width: 24%;
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -239,7 +250,7 @@ body .section--projects .section__content {
 
 .skillcard__title {
   font-family: Roboto Slab;
-  font-size: 24px;
+  font-size: 20px;
   color: #6a6a6a;
   text-align: center;
 }
@@ -247,6 +258,7 @@ body .section--projects .section__content {
 .skillcard__content {
   font-size: 14px;
   text-align: center;
+  font-weight: 400;
 }
 
 .skillcard__label {
@@ -446,7 +458,7 @@ body .section--projects .section__content {
   position: relative;
   overflow: hidden;
   padding-top: 10%;
-  padding-bottom: 50px;
+  padding-bottom: 1%;
 }
 
 .footer .footer__vector {
@@ -487,7 +499,7 @@ body .section--projects .section__content {
   color: rgba(0, 0, 0, 0.8);
 }
 
-.navbar {
+.topNavbar {
   z-index: 10000;
   height: 40px;
   position: absolute;
@@ -504,14 +516,14 @@ body .section--projects .section__content {
   background-color: rgba(255, 255, 255, 0);
 }
 
-.navbar.active {
+.topNavbar.active {
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
   background: -webkit-gradient(linear, left top, right top, from(#4ca9b1), to(#00ffb8));
   background: linear-gradient(90deg, #4ca9b1 0%, #00ffb8 100%);
 }
 
-.navbar__actions {
+.topNavbar__actions {
   width: 35%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -524,7 +536,7 @@ body .section--projects .section__content {
   padding: 0;
 }
 
-.navbar__actions .navbar__item {
+.topNavbar__actions .topNavbar__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -536,12 +548,12 @@ body .section--projects .section__content {
           align-items: center;
 }
 
-.navbar__actions .navbar__item img {
+.topNavbar__actions .topNavbar__item img {
   width: 20px;
   margin-right: 3px;
 }
 
-.navbar__link {
+.topNavbar__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -713,7 +725,6 @@ body .section--projects .section__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 50%;
   overflow: hidden;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -722,6 +733,7 @@ body .section--projects .section__content {
 
 .banner #banner__image {
   width: 40%;
+  height: 80%;
 }
 
 .banner #banner__title {
