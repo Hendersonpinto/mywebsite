@@ -34,6 +34,22 @@ html {
 }
 
 body {
+
+	#arrow {
+		position: fixed;
+		right: 3%;
+		bottom: 3%;
+		// transform: translateY(100%);
+		transform: rotate(180deg) translateY(-150%);
+		cursor: pointer;
+		z-index: 90000000;
+		transition: all 500ms ease-in;
+
+		&.active {
+			transform: rotate(180deg) translateY(0);
+		}
+	}
+
 	.banner {
 		height: 100vh;
 		background: url('../app/images/Vector.svg') no-repeat;

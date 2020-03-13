@@ -26,6 +26,23 @@ html p {
   font-weight: 400;
 }
 
+body #arrow {
+  position: fixed;
+  right: 3%;
+  bottom: 3%;
+  -webkit-transform: rotate(180deg) translateY(-150%);
+          transform: rotate(180deg) translateY(-150%);
+  cursor: pointer;
+  z-index: 90000000;
+  -webkit-transition: all 500ms ease-in;
+  transition: all 500ms ease-in;
+}
+
+body #arrow.active {
+  -webkit-transform: rotate(180deg) translateY(0);
+          transform: rotate(180deg) translateY(0);
+}
+
 body .banner {
   height: 100vh;
   background: url("../app/images/Vector.svg") no-repeat;
@@ -374,8 +391,19 @@ body .section--projects .section__content {
 }
 
 .project .project__wrapper .project__info {
+  -webkit-transform: translateX(-30%);
+          transform: translateX(-30%);
   width: 40%;
   text-align: left;
+  opacity: 0;
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+}
+
+.project .project__wrapper .project__info.active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
 }
 
 .project .project__wrapper .project__info .emoji {
@@ -398,9 +426,18 @@ body .section--projects .section__content {
 }
 
 .project .project__wrapper .project__image {
+  -webkit-transform: translateX(30%);
+          transform: translateX(30%);
+  opacity: 0;
   width: 40%;
-  -webkit-transition: all 500ms ease-in-out;
-  transition: all 500ms ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.project .project__wrapper .project__image.active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
 }
 
 .project .project__wrapper .project__image:hover {
@@ -414,8 +451,19 @@ body .section--projects .section__content {
 }
 
 .project .project__wrapper--inversed .project__info {
+  -webkit-transform: translateX(30%);
+          transform: translateX(30%);
+  opacity: 0;
   width: 40%;
   text-align: right;
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+}
+
+.project .project__wrapper--inversed .project__info.active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
 }
 
 .project .project__wrapper--inversed .project__info .emoji {
@@ -438,7 +486,18 @@ body .section--projects .section__content {
 }
 
 .project .project__wrapper--inversed .project__image {
+  -webkit-transform: translateX(-30%);
+          transform: translateX(-30%);
+  opacity: 0;
   width: 40%;
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+}
+
+.project .project__wrapper--inversed .project__image.active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
 }
 
 .project .project__wrapper--inversed .project__image:hover {
@@ -600,7 +659,7 @@ body .section--projects .section__content {
   height: 100vh;
   position: fixed;
   top: 0;
-  left: -80px;
+  left: 0px;
   width: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -611,16 +670,19 @@ body .section--projects .section__content {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+  -webkit-transition: all 800ms ease-in-out;
+  transition: all 800ms ease-in-out;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  opacity: 0.0;
   background: -webkit-gradient(linear, left bottom, left top, from(#4ca9b1), to(#00ffb8));
   background: linear-gradient(0deg, #4ca9b1 0%, #00ffb8 100%);
 }
 
 .sideNavbar.active {
-  background: -webkit-gradient(linear, left top, right top, from(#4ca9b1), to(#00ffb8));
-  background: linear-gradient(90deg, #4ca9b1 0%, #00ffb8 100%);
-  width: 40px;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  opacity: 1;
 }
 
 .sideNavbar__actions {
