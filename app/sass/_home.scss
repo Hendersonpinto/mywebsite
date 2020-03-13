@@ -172,6 +172,7 @@ body {
 
 				.about__text {
 					margin: 0px;
+					width: 100%;
 
 					p {
 						font-size: 10px;
@@ -240,7 +241,7 @@ body {
 
 			&__cards {
 				z-index: 10;
-				width: 100%;
+				width: 150%;
 				display: flex;
 				justify-content: space-around;
 				transition: all 500ms ease;

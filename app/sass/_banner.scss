@@ -10,9 +10,7 @@
     // padding-top: 70px;
     margin-bottom: 100px;
 
-    @media only screen and (max-width: 576px) {
-        margin-bottom: 50px;
-    }
+
 
     h1 {
         // font-family: 'Montserrat';
@@ -83,7 +81,7 @@
         }
 
         @media only screen and (max-width: 576px) {
-            height: 50vh;
+            height: 40vh;
 
             div {
                 white-space: normal;
@@ -109,6 +107,17 @@
         >img {
             width: 100%;
             height: auto;
+        }
+    }
+
+
+    @media only screen and (max-width: 576px) {
+        margin-bottom: 50px;
+
+        #banner__image {
+            // flex-grow: 1;
+            width: 80%;
+            height: 100%;
         }
     }
 }

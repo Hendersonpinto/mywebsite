@@ -151,6 +151,7 @@ body .section--about .about__text .emoji {
   }
   body .section--about .about__text {
     margin: 0px;
+    width: 100%;
   }
   body .section--about .about__text p {
     font-size: 10px;
@@ -222,7 +223,7 @@ body .section--skillset__actions .skill.active span {
 
 body .section--skillset__cards {
   z-index: 10;
-  width: 100%;
+  width: 150%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -523,7 +524,7 @@ body .section--projects .section__content {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 10px;
+    padding: 0px;
     text-align: center;
   }
   .project .project__wrapper .project__info p {
@@ -652,7 +653,7 @@ body .section--projects .section__content {
 }
 
 .topNavbar__actions {
-  width: 100%;
+  width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -702,6 +703,9 @@ body .section--projects .section__content {
 @media only screen and (max-width: 576px) {
   .topNavbar__link {
     font-size: 12px;
+  }
+  .topNavbar__actions {
+    width: 100%;
   }
 }
 
@@ -821,12 +825,6 @@ body .section--projects .section__content {
   margin-bottom: 100px;
 }
 
-@media only screen and (max-width: 576px) {
-  .banner {
-    margin-bottom: 50px;
-  }
-}
-
 .banner h1 {
   font-family: 'Montserrat Alternates';
   font-size: 56px;
@@ -915,7 +913,7 @@ body .section--projects .section__content {
 
 @media only screen and (max-width: 576px) {
   .banner #banner__title {
-    height: 50vh;
+    height: 40vh;
   }
   .banner #banner__title div {
     white-space: normal;
@@ -939,5 +937,15 @@ body .section--projects .section__content {
 .banner #banner__down-arrow > img {
   width: 100%;
   height: auto;
+}
+
+@media only screen and (max-width: 576px) {
+  .banner {
+    margin-bottom: 50px;
+  }
+  .banner #banner__image {
+    width: 80%;
+    height: 100%;
+  }
 }
 /*# sourceMappingURL=index.css.map */

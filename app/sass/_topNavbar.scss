@@ -22,7 +22,7 @@
 	}
 
 	&__actions {
-		width: 100%;
+		width: 30%;
 		display: flex;
 		justify-content: space-around;
 		list-style-type: none;
@@ -60,6 +60,10 @@
 
 			font-size: 12px;
 
+		}
+
+		&__actions {
+			width: 100%;
 		}
 	}
 }
