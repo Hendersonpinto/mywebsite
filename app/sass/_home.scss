@@ -29,7 +29,7 @@ html {
 	p {
 		font-family: Montserrat;
 		font-size: 14px;
-		font-weight: 400;
+		font-weight: 500;
 	}
 }
 
@@ -50,94 +50,7 @@ body {
 		}
 	}
 
-	.banner {
-		height: 100vh;
-		background: url('../app/images/Vector.svg') no-repeat;
-		background-position: center;
-		background-size: cover;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		// padding-top: 70px;
-		margin-bottom: 100px;
 
-		h1 {
-			// font-family: 'Montserrat';
-			// font-family: 'Roboto Slab';
-			// font-family: 'Roboto';
-			// font-family: 'Gothic A1';
-			// font-family: 'Raleway';
-			font-family: 'Montserrat Alternates';
-			font-size: 56px;
-			font-weight: 700;
-			color: white;
-			text-align: center;
-			margin: 0;
-		}
-
-		#banner__animated-text {
-			color: $mydarkblue;
-			// text-shadow: 3px 0 rgba(0, 0, 0, 0.17), 0 3px rgba(0, 0, 0, 0.122), 1px 0 rgba(0, 0, 0, 0.493), 0 -1px rgba(0, 0, 0, 0.486);
-			animation: disappear 5s infinite;
-			animation-delay: -2500ms;
-		}
-
-		@keyframes disappear {
-
-			0%,
-			100% {
-				opacity: 1;
-			}
-
-			50% {
-				opacity: 0;
-			}
-		}
-
-		&__content {
-			// padding: 20px;
-			width: 100vw;
-			margin: auto;
-			width: 100%;
-			display: flex;
-			height: 50%;
-			overflow: hidden;
-			justify-content: space-between;
-		}
-
-		#banner__image {
-			// flex-grow: 1;
-			width: 40%;
-		}
-
-		#banner__title {
-			// width: 50%;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			flex-grow: 1;
-			transform: translateX(-2vw);
-
-			// overflow: hidden;
-			>div {
-				white-space: nowrap;
-			}
-
-			h1 {
-				font-size: 48px;
-			}
-		}
-
-		#banner__down-arrow {
-			width: 30px;
-
-			>img {
-				width: 100%;
-				height: auto;
-			}
-		}
-	}
 
 	// #bg {
 	//     // clip-path: polygon(100% 0, 100% 35%, 40% 100%, 0 100%, 0 0);
@@ -186,6 +99,10 @@ body {
 		&--about {
 			>span {
 				font-size: 1.5em;
+			}
+
+			p {
+				font-weight: 400;
 			}
 
 			.vector {

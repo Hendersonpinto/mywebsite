@@ -23,7 +23,7 @@ body p,
 html p {
   font-family: Montserrat;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 body #arrow {
@@ -41,117 +41,6 @@ body #arrow {
 body #arrow.active {
   -webkit-transform: rotate(180deg) translateY(0);
           transform: rotate(180deg) translateY(0);
-}
-
-body .banner {
-  height: 100vh;
-  background: url("../app/images/Vector.svg") no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 100px;
-}
-
-body .banner h1 {
-  font-family: 'Montserrat Alternates';
-  font-size: 56px;
-  font-weight: 700;
-  color: white;
-  text-align: center;
-  margin: 0;
-}
-
-body .banner #banner__animated-text {
-  color: #01112D;
-  -webkit-animation: disappear 5s infinite;
-          animation: disappear 5s infinite;
-  -webkit-animation-delay: -2500ms;
-          animation-delay: -2500ms;
-}
-
-@-webkit-keyframes disappear {
-  0%,
-  100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-}
-
-@keyframes disappear {
-  0%,
-  100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-}
-
-body .banner__content {
-  width: 100vw;
-  margin: auto;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 50%;
-  overflow: hidden;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-body .banner #banner__image {
-  width: 40%;
-}
-
-body .banner #banner__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -webkit-transform: translateX(-2vw);
-          transform: translateX(-2vw);
-}
-
-body .banner #banner__title > div {
-  white-space: nowrap;
-}
-
-body .banner #banner__title h1 {
-  font-size: 48px;
-}
-
-body .banner #banner__down-arrow {
-  width: 30px;
-}
-
-body .banner #banner__down-arrow > img {
-  width: 100%;
-  height: auto;
 }
 
 body .section {
@@ -201,6 +90,10 @@ body .section__content {
 
 body .section--about > span {
   font-size: 1.5em;
+}
+
+body .section--about p {
+  font-weight: 400;
 }
 
 body .section--about .vector {
@@ -550,6 +443,10 @@ body .section--projects .section__content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding-top: 10%;
+  padding-bottom: 50px;
 }
 
 .footer .footer__vector {
@@ -580,6 +477,14 @@ body .section--projects .section__content {
 
 .footer .contact .media_icon {
   width: 30px;
+}
+
+.footer span {
+  position: absolute;
+  bottom: 3%;
+  right: 7%;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .navbar {
@@ -741,5 +646,116 @@ body .section--projects .section__content {
   cursor: pointer;
   font-weight: 600;
   margin: 0px;
+}
+
+.banner {
+  height: 100vh;
+  background: url("../app/images/Vector.svg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 100px;
+}
+
+.banner h1 {
+  font-family: 'Montserrat Alternates';
+  font-size: 56px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+.banner #banner__animated-text {
+  color: #01112D;
+  -webkit-animation: disappear 5s infinite;
+          animation: disappear 5s infinite;
+  -webkit-animation-delay: -2500ms;
+          animation-delay: -2500ms;
+}
+
+@-webkit-keyframes disappear {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes disappear {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.banner__content {
+  width: 100vw;
+  margin: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50%;
+  overflow: hidden;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.banner #banner__image {
+  width: 40%;
+}
+
+.banner #banner__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-transform: translateX(-2vw);
+          transform: translateX(-2vw);
+}
+
+.banner #banner__title > div {
+  white-space: nowrap;
+}
+
+.banner #banner__title h1 {
+  font-size: 48px;
+}
+
+.banner #banner__down-arrow {
+  width: 30px;
+}
+
+.banner #banner__down-arrow > img {
+  width: 100%;
+  height: auto;
 }
 /*# sourceMappingURL=index.css.map */

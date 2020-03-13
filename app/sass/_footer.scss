@@ -3,6 +3,10 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding-top: 10%;
+    padding-bottom: 50px;
 
 
     .footer__vector {
@@ -32,5 +36,13 @@
         .media_icon {
             width: 30px;
         }
+    }
+
+    span {
+        position: absolute;
+        bottom: 3%;
+        right: 7%;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.8)
     }
 }
