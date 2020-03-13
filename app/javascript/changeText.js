@@ -1,5 +1,5 @@
 console.log("Hello from changeText")
-var messages = ["Web developer", "UX Designer", "Fullstack Developer", "Dog Lover"];
+var messages = ["Web developer", "UX Designer", "Team player", "Fullstack developer"];
 const text = document.querySelector('#banner__animated-text');
 
 function changeText() {
