@@ -77,6 +77,9 @@ body {
 		align-items: center;
 		$this: &;
 		margin-top: 100px;
+		overflow: hidden;
+
+
 
 		.section-title {
 			h2 {
@@ -87,6 +90,8 @@ body {
 				font-weight: 400;
 			}
 
+
+
 			.separator {
 				margin: auto;
 				width: 50%;
@@ -95,13 +100,17 @@ body {
 			}
 		}
 
+
+
+
 		&__content {
 			width: 80%;
 			display: flex;
-			margin: 70px auto;
 			justify-content: center;
+			margin: 70px auto;
 			align-items: center;
 		}
+
 
 		&--about {
 			>span {
@@ -123,7 +132,8 @@ body {
 			.about__image {
 				width: 20%;
 				padding: 10px;
-				box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+				box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+					0 6px 6px rgba(0, 0, 0, 0.23);
 
 				>img {
 					width: 100%;
@@ -136,13 +146,36 @@ body {
 				color: black;
 				margin-left: 50px;
 
-				>p {
+
+				p {
 					font-family: Montserrat;
 					font-size: 16px;
 				}
 
+
+
 				.emoji {
 					font-size: 1.2em;
+				}
+			}
+
+			@media only screen and (max-width: 576px) {
+				.vector {
+					// left: 50%;
+					top: 50%
+				}
+
+				.about__image {
+					width: 50%;
+					margin: 0%;
+				}
+
+				.about__text {
+					margin: 0px;
+
+					p {
+						font-size: 10px;
+					}
 				}
 			}
 		}
@@ -212,11 +245,41 @@ body {
 				justify-content: space-around;
 				transition: all 500ms ease;
 			}
+
+			@media only screen and (max-width: 576px) {
+				&__actions {
+					width: 80%;
+
+					.skill {
+						span {
+							font-size: 8px;
+							top: -20%
+						}
+					}
+				}
+
+				&__cards {
+					justify-content: center;
+				}
+			}
+
 		}
 
 		&--projects {
 			.section__content {
 				flex-direction: column;
+			}
+		}
+
+		@media only screen and (max-width: 576px) {
+			margin-top: 30px;
+			width: 100%;
+			min-height: 0px;
+
+			.section-title {
+				h2 {
+					font-size: 24px;
+				}
 			}
 		}
 	}

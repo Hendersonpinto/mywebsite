@@ -33,4 +33,19 @@
 		top: 20%;
 		left: -4%;
 	}
+
+	@media only screen and (max-width: 576px) {
+		width: 20%;
+		padding: 8px;
+		margin: 4px;
+		height: auto;
+
+		&__title {
+			font-size: 11px;
+		}
+
+		&__content {
+			font-size: 10px;
+		}
+	}
 }

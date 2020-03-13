@@ -22,7 +22,7 @@
 	}
 
 	&__actions {
-		width: 35%;
+		width: 100%;
 		display: flex;
 		justify-content: space-around;
 		list-style-type: none;
@@ -53,5 +53,13 @@
 		cursor: pointer;
 		font-weight: 600;
 		margin: 0px;
+	}
+
+	@media only screen and (max-width: 576px) {
+		&__link {
+
+			font-size: 12px;
+
+		}
 	}
 }

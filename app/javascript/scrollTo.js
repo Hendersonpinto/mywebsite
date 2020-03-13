@@ -1,5 +1,5 @@
 const sideNavButtons = document.querySelectorAll('.sideNavbar__item')
-const navButtons = document.querySelectorAll('.navbar__link')
+const navButtons = document.querySelectorAll('.topNavbar__item')
 const arrow = document.getElementById('arrow')
 const sections = {
     'about': document.querySelector('.section--about'),

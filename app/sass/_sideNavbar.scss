@@ -1,4 +1,9 @@
 .sideNavbar {
+
+    @media only screen and (max-width: 576px) {
+        display: none
+    }
+
     z-index: 10000;
     height: 100vh;
     position: fixed;

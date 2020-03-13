@@ -10,6 +10,10 @@
     // padding-top: 70px;
     margin-bottom: 100px;
 
+    @media only screen and (max-width: 576px) {
+        margin-bottom: 50px;
+    }
+
     h1 {
         // font-family: 'Montserrat';
         // font-family: 'Roboto Slab';
@@ -52,12 +56,18 @@
         // height: 50%;
         overflow: hidden;
         justify-content: space-between;
+
+        .banner__image {
+            display: flex;
+            justify-content: center;
+            // margin-top: 50px;
+        }
     }
 
     #banner__image {
         // flex-grow: 1;
-        width: 40%;
-        height: 80%;
+        width: 60%;
+        height: 100%;
     }
 
     #banner__title {
@@ -68,13 +78,28 @@
         flex-grow: 1;
         transform: translateX(-2vw);
 
-        // overflow: hidden;
-        >div {
+        div {
             white-space: nowrap;
         }
 
+        @media only screen and (max-width: 576px) {
+            height: 50vh;
+
+            div {
+                white-space: normal;
+            }
+        }
+
+
+
         h1 {
             font-size: 48px;
+        }
+
+        @media only screen and (max-width: 576px) {
+            h1 {
+                font-size: 40px;
+            }
         }
     }
 
