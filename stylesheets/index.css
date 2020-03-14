@@ -356,8 +356,8 @@ body .section__content {
 
 @media only screen and (max-width: 576px) {
   .project .project__wrapper--inversed .project__image .cinemapp {
-    width: 60%;
-    height: 150px;
+    width: 70%;
+    height: 200px;
   }
 }
 
