@@ -108,6 +108,9 @@
     }
 
     @media only screen and (min-width: 577px) and (max-width: 992px) {
+        .banner__row {
+            margin: 0px;
+        }
 
         #banner__image {
             // flex-grow: 1;
@@ -120,6 +123,7 @@
 
         .banner__row {
             width: 100%;
+            margin: 0px;
 
             .banner__title {
                 display: flex;
