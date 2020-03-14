@@ -291,7 +291,7 @@ body .section__content {
 
 .project .project__wrapper .project__image img {
   width: 80%;
-  height: 50px;
+  height: auto;
 }
 
 .project .project__wrapper--inversed .project__info {
@@ -351,7 +351,7 @@ body .section__content {
 
 .project .project__wrapper--inversed .project__image img {
   width: 80%;
-  height: 50px;
+  height: auto;
 }
 
 @media only screen and (max-width: 576px) {
