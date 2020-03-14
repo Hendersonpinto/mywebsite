@@ -354,6 +354,13 @@ body .section__content {
   height: auto;
 }
 
+@media only screen and (max-width: 576px) {
+  .project .project__wrapper--inversed .project__image img {
+    width: 60%;
+    height: 200px;
+  }
+}
+
 .project .project__wrapper .vector {
   z-index: -10;
   position: absolute;
@@ -389,7 +396,8 @@ body .section__content {
     opacity: 0;
   }
   .project .project__wrapper .project__image img {
-    width: 50%;
+    width: 80%;
+    height: 150px;
   }
   .project .project__wrapper .project__info {
     -webkit-transform: translateY(30%);
