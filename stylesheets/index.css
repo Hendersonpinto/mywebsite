@@ -9,7 +9,6 @@ html {
   height: 100%;
   margin: 0;
   color: white;
-  font-family: 'Roboto';
   padding: 0;
   color: black;
 }
@@ -142,7 +141,7 @@ body .section__content {
 }
 
 .skillcard__title {
-  font-family: Roboto Slab;
+  font-family: Montserrat;
   font-size: 20px;
   color: #6a6a6a;
   text-align: center;
@@ -151,7 +150,7 @@ body .section__content {
 .skillcard__content {
   font-size: 14px;
   text-align: center;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .skillcard__label {
@@ -237,7 +236,7 @@ body .section__content {
 }
 
 .project .project__wrapper .project__info h2 {
-  font-family: Lato;
+  font-family: Montserrat;
   font-size: 28px;
 }
 
@@ -257,12 +256,13 @@ body .section__content {
   background-color: #da7f2a;
   -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.3);
           box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.3);
-  color: white;
+  color: black;
   border-radius: 10px;
   padding: 8px 16px;
-  background-color: #da7f2a;
+  background-color: #f4a965;
   font-family: Montserrat;
   font-size: 14px;
+  font-weight: 500;
 }
 
 .project .project__wrapper .project__info .project__button:hover {
@@ -315,7 +315,7 @@ body .section__content {
 }
 
 .project .project__wrapper--inversed .project__info h2 {
-  font-family: Lato;
+  font-family: Montserrat;
   font-size: 28px;
 }
 
@@ -416,6 +416,9 @@ body .section__content {
   .project .project__wrapper .project__info .project__button {
     padding: 4px 8px;
     font-size: 12px;
+  }
+  .project .project__wrapper .project__info .project__button p {
+    color: black;
   }
 }
 
@@ -1000,7 +1003,7 @@ body .section__content {
     width: 100%;
   }
   .section--about .about__text p {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 

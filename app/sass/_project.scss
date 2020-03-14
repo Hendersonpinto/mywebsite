@@ -40,7 +40,7 @@
             }
 
             h2 {
-                font-family: Lato;
+                font-family: Montserrat;
                 font-size: 28px;
             }
 
@@ -60,12 +60,13 @@
                 margin: auto;
                 background-color: $mygold;
                 box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.3);
-                color: white;
+                color: black;
                 border-radius: 10px;
                 padding: 8px 16px;
-                background-color: #da7f2a;
+                background-color: #f4a965;
                 font-family: Montserrat;
                 font-size: 14px;
+                font-weight: 500;
                 // transition: all 5s ease;
 
                 &:hover {
@@ -119,7 +120,7 @@
                 }
 
                 h2 {
-                    font-family: Lato;
+                    font-family: Montserrat;
                     font-size: 28px;
                 }
 
@@ -207,6 +208,10 @@
                 .project__button {
                     padding: 4px 8px;
                     font-size: 12px;
+
+                    p {
+                        color: black;
+                    }
                 }
             }
         }
