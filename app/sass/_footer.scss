@@ -4,7 +4,7 @@
     justify-content: space-around;
     align-items: center;
     position: relative;
-    overflow: hidden;
+    // overflow: hidden;
     padding-top: 10%;
     padding-bottom: 1%;
 
@@ -28,7 +28,7 @@
         display: flex;
 
         p {
-            font-size: 16px;
+            font-size: 14px;
             margin: 10px;
             color: #CBCBCB;
         }
@@ -42,7 +42,7 @@
         position: absolute;
         bottom: 3%;
         right: 7%;
-        font-size: 14px;
+        font-size: 12px;
         color: rgba(0, 0, 0, 0.8)
     }
 
@@ -81,5 +81,47 @@
             font-size: 8px;
             color: rgba(0, 0, 0, 0.8)
         }
+    }
+
+    @media only screen and (min-width: 577px) and (max-width: 992px) {
+        padding-top: 5%;
+        padding-bottom: 5%;
+
+        .footer__vector {
+            width: 600px;
+            left: 0px;
+            bottom: 0%;
+            height: 260px;
+        }
+
+        &__wrapper {
+            width: 70%;
+        }
+
+        .contact {
+            margin-top: 6px;
+            align-items: center;
+
+            p {
+                font-size: 12px;
+                color: #CBCBCB;
+                margin: 4px;
+            }
+
+            .media_icon {
+                width: 20px;
+            }
+        }
+
+        span {
+            bottom: 3%;
+            right: 7%;
+            font-size: 12px;
+            color: rgba(0, 0, 0, 0.8)
+        }
+    }
+
+    @media only screen and (min-width: 993px) {
+        overflow: hidden;
     }
 }
