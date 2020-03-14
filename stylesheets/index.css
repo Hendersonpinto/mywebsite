@@ -856,6 +856,10 @@ body .section__content {
           justify-content: center;
 }
 
+.banner__content .banner__row {
+  margin: 0px;
+}
+
 .banner #banner__image {
   width: 280px;
   height: 100%;
@@ -913,7 +917,7 @@ body .section__content {
 
 @media only screen and (min-width: 993px) {
   .banner .banner__row {
-    width: 100%;
+    width: 90%;
     margin: 0px;
   }
   .banner .banner__row .banner__title {

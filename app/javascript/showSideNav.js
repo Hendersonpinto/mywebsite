@@ -11,16 +11,13 @@ function hideNav() {
 
         if (prevScrollPos > currentScrollPos) {
             navbar.classList.add('active')
-            // navbar.style.left = "0";
         } else {
             navbar.classList.remove('active')
-            // navbar.style.left = "-80px";
         }
         prevScrollPos = currentScrollPos;
     } else {
         navbar.classList.remove('active')
         arrow2.classList.remove('active')
-        // navbar.style.left = "-80px";
     }
 }
 

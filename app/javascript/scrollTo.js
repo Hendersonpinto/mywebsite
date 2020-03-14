@@ -9,7 +9,6 @@ const sections = {
 
 function scrollTo() {
 
-    console.log(this.dataset.linkto)
     window.scroll({
         top: sections[this.dataset.linkto].offsetTop - 60,
         left: 0,
@@ -18,8 +17,6 @@ function scrollTo() {
 }
 
 arrow.addEventListener('click', () => {
-    console.log('i clicked arrow')
-    console.log(window.scrollY)
     window.scroll({
         top: 0,
         left: 0,
