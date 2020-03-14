@@ -355,9 +355,9 @@ body .section__content {
 }
 
 @media only screen and (max-width: 576px) {
-  .project .project__wrapper--inversed .project__image img {
+  .project .project__wrapper--inversed .project__image .cinemapp {
     width: 60%;
-    height: 50px;
+    height: 150px;
   }
 }
 
@@ -397,7 +397,7 @@ body .section__content {
   }
   .project .project__wrapper .project__image img {
     width: 80%;
-    height: 50px;
+    height: 150px;
   }
   .project .project__wrapper .project__info {
     -webkit-transform: translateY(30%);
