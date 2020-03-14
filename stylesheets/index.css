@@ -390,7 +390,6 @@ body .section__content {
   }
   .project .project__wrapper .project__image img {
     width: 80%;
-    height: auto;
   }
   .project .project__wrapper .project__info {
     -webkit-transform: translateY(30%);
