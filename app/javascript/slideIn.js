@@ -9,6 +9,7 @@ function checkSlide() {
 
         if (bottomScreen > halfProject) {
             // [...project.children].forEach(child => child.classList.add('active'))
+            slides.forEach(child => child.style.opacity = 1)
             slides.forEach(child => child.classList.add('active'))
         }
     });
