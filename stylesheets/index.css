@@ -389,7 +389,7 @@ body .section__content {
     opacity: 0;
   }
   .project .project__wrapper .project__image img {
-    width: 80%;
+    width: 50%;
   }
   .project .project__wrapper .project__info {
     -webkit-transform: translateY(30%);
