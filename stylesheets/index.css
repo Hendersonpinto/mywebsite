@@ -221,8 +221,10 @@ body .section__content {
   opacity: 0;
   width: 40%;
   text-align: left;
-  -webkit-transition: all 1s ease-in;
-  transition: all 1s ease-in;
+  -webkit-transition: transform 1000ms;
+  -webkit-transition: -webkit-transform 1000s;
+  -webkit-transition: all 1000ms ease-in;
+  transition: all 1000ms ease-in;
 }
 
 .project .project__wrapper .project__info.active {
@@ -274,8 +276,10 @@ body .section__content {
           transform: translateX(30%);
   opacity: 0;
   width: 40%;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+  -webkit-transition: transform 1000ms;
+  -webkit-transition: -webkit-transform 1000s;
+  -webkit-transition: all 1000ms ease-in;
+  transition: all 1000ms ease-in;
 }
 
 .project .project__wrapper .project__image.active {
@@ -300,8 +304,10 @@ body .section__content {
   opacity: 0;
   width: 40%;
   text-align: right;
-  -webkit-transition: all 1s ease-in;
-  transition: all 1s ease-in;
+  -webkit-transition: transform 1000ms;
+  -webkit-transition: -webkit-transform 1000s;
+  -webkit-transition: all 1000ms ease-in;
+  transition: all 1000ms ease-in;
 }
 
 .project .project__wrapper--inversed .project__info.active {
@@ -334,8 +340,10 @@ body .section__content {
           transform: translateX(-30%);
   opacity: 0;
   width: 40%;
-  -webkit-transition: all 1s ease-in;
-  transition: all 1s ease-in;
+  -webkit-transition: transform 1000ms;
+  -webkit-transition: -webkit-transform 1000s;
+  -webkit-transition: all 1000ms ease-in;
+  transition: all 1000ms ease-in;
 }
 
 .project .project__wrapper--inversed .project__image.active {
@@ -394,6 +402,10 @@ body .section__content {
     -webkit-transform: translateY(30%);
             transform: translateY(30%);
     opacity: 0;
+    -webkit-transition: transform 1000ms;
+    -webkit-transition: -webkit-transform 1000s;
+    -webkit-transition: all 1000ms ease-in;
+    transition: all 1000ms ease-in;
   }
   .project .project__wrapper .project__image img {
     width: 80%;
@@ -413,6 +425,10 @@ body .section__content {
             flex-direction: column;
     padding: 0px;
     text-align: center;
+    -webkit-transition: transform 1000ms;
+    -webkit-transition: -webkit-transform 1000s;
+    -webkit-transition: all 1000ms ease-in;
+    transition: all 1000ms ease-in;
   }
   .project .project__wrapper .project__info p {
     font-size: 12px;

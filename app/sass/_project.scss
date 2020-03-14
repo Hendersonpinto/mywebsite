@@ -28,7 +28,9 @@
             opacity: 0;
             width: 40%;
             text-align: left;
-            transition: all 1s ease-in;
+            -webkit-transition: transform 1000ms;
+            -webkit-transition: -webkit-transform 1000s;
+            transition: all 1000ms ease-in;
 
             &.active {
                 transform: translateX(0);
@@ -79,8 +81,9 @@
             transform: translateX(30%);
             opacity: 0;
             width: 40%;
-
-            transition: all 1s ease-in-out;
+            -webkit-transition: transform 1000ms;
+            -webkit-transition: -webkit-transform 1000s;
+            transition: all 1000ms ease-in;
 
             &.active {
                 transform: translateX(0);
@@ -107,7 +110,9 @@
                 opacity: 0;
                 width: 40%;
                 text-align: right;
-                transition: all 1s ease-in;
+                -webkit-transition: transform 1000ms;
+                -webkit-transition: -webkit-transform 1000s;
+                transition: all 1000ms ease-in;
 
 
                 &.active {
@@ -139,7 +144,9 @@
                 transform: translateX(-30%);
                 opacity: 0;
                 width: 40%;
-                transition: all 1s ease-in;
+                -webkit-transition: transform 1000ms;
+                -webkit-transition: -webkit-transform 1000s;
+                transition: all 1000ms ease-in;
 
 
                 &.active {
@@ -188,6 +195,9 @@
                 justify-content: center;
                 transform: translateY(30%);
                 opacity: 0;
+                -webkit-transition: transform 1000ms;
+                -webkit-transition: -webkit-transform 1000s;
+                transition: all 1000ms ease-in;
 
                 img {
                     width: 80%;
@@ -203,6 +213,10 @@
                 flex-direction: column;
                 padding: 0px;
                 text-align: center;
+                -webkit-transition: transform 1000ms;
+                -webkit-transition: -webkit-transform 1000s;
+                transition: all 1000ms ease-in;
+
 
                 p {
                     font-size: 12px;
