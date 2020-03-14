@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BOOTSTRAP</title>
+    <!-- Loading fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Gothic+A1:100,200,300,400,500,600,700,800,900|Montserrat+Alternates:400,600,700|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i|Raleway:100,400,500,600,700|Roboto+Slab:100,300,400,500,600,700|Roboto:100,100i,400,400i,500,700,700i&display=swap"
+        rel="stylesheet">
+    <!-- Loading bootstrap from CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Linking my stylesheets -->
+    <link rel="stylesheet" href="/stylesheets/index.css">
+    <!-- Including fontawesome for icons -->
+    <script src="https://kit.fontawesome.com/a5d41752e1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="topNavbar">
+        <a href="" class="topNavbar__logo"></a>
+        <ul class="topNavbar__actions">
+            <li class="topNavbar__item" data-linkto="about">
+                <img src="/app/images/profile.svg" alt="">
+                <p class="topNavbar__link">About me</p>
+            </li>
+            <li class="topNavbar__item" data-linkto="skillset">
+                <img src="/app/images/gridicons_trophy.svg" alt="">
+                <p class="topNavbar__link">Skills</p>
+            </li>
+            <li class="topNavbar__item" data-linkto="projects">
+                <img src="/app/images/ion_rocket-sharp.svg" alt="">
+                <p class="topNavbar__link">Portfolio</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="sideNavbar">
+        <ul class="sideNavbar__actions">
+            <li class="sideNavbar__item" data-linkto="about">
+                <img src="/app/images/profile.svg" alt="">
+                <p class="sideNavbar__link">About me</p>
+            </li>
+            <li class="sideNavbar__item" data-linkto="skillset">
+                <img src="/app/images/gridicons_trophy.svg" alt="">
+                <p class="sideNavbar__link">Skills</p>
+            </li>
+            <li class="sideNavbar__item" data-linkto="projects">
+                <img src="/app/images/ion_rocket-sharp.svg" alt="">
+                <p class="sideNavbar__link">Portfolio</p>
+            </li>
+        </ul>
+    </div>
+
+    <div id="arrow">
+        <img src="/app/images/down_arrow.svg" alt="">
+    </div>
+
+
+    <div class="containeer">
+        <div class="banner">
+            <div class="banner__content">
+                <div class="row banner__row">
+                    <div class="col-sm-6 order-2 order-sm-1 banner__image">
+                        <img id="banner__image" src="/app/images/proud8.svg">
+                    </div>
+                    <div class="col-sm-6 order-1 order-sm-2 banner__title">
+                        <div id="banner__title">
+                            <h1>Hello. I'm Henderson</h1>
+                            <div>
+                                <h1 id="banner__animated-text">Fullstack developer</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <div class="section section--about">
+            <img src="/app/images/vector_about.svg" alt="" class="vector">
+            <div class="section-title">
+                <h2>About me</h2>
+                <div class="separator"></div>
+            </div>
+            <div class="section__content">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-sm-6 col-md-4 d-flex justify-content-center">
+                        <div class="about__image">
+                            <img id="about__image" src="/app/images/selfie.jpg">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-8 d-flex justify-content-center">
+                        <div class="about__text">
+                            <p>An entrepreneur and tech fanatic with an immense love for dogs and nature. Transitioning
+                                from
+                                an
+                                engineering background in a pursuit for a more sustainable and innovative career <span
+                                    class="emoji">🚀</span></p>
+                            <p>A believer of the power of programming to improve people’s (and dogs) lives by
+                                enabling the changes towards sustainability that the planet earth desperately requires
+                                <span class="emoji">🌍</span></p>
+                            <p>After finishing my master studies I decided to do what I always really wanted to do:
+                                coding
+                                <span class="emoji">💻</span>. So I enrolled in the best coding bootcamp in the world,
+                                and
+                                graduated as a Full-Stack web developer. </p>
+                            <p>So far, I have JavaScript (ES6), Ruby on Rails, NodeJS, HTML, CSS, SASS, Bootstrap,
+                                jQuery,
+                                SQL,
+                                PostgreSQL, Git/Github and Heroku under my belt 🥋. Besides started to teach myself
+                                React.js
+                            </p>
+                            <p>Among my many next-to-learn skills are TypeScript and Test-Driven Development as priority
+                                <span class="emoji">💪</span></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="section section--skillset">
+            <img src="/app/images/vector_skillset.svg" alt="" class="vector">
+            <div class="section-title">
+                <h2>Skillset</h2>
+                <div class="separator"></div>
+            </div>
+            <div class="section__content" style="flex-direction:column">
+                <div class="section--skillset__actions">
+                    <div class="skill active" data-skill="frontend">
+                        <img src="/app/images/frontendskill.svg" alt="">
+                        <span>Front-end</span>
+                    </div>
+                    <div class="skill" data-skill="backend">
+                        <img src="/app/images/dbskill.svg" alt="">
+                        <span>Back-end</span>
+                    </div>
+                    <div class="skill" data-skill="ux">
+                        <img src="/app/images/uxskill.svg" alt="">
+                        <span>UX design</span>
+
+                    </div>
+                    <div class="skill" data-skill="management">
+                        <img src="/app/images/projectskill.svg" alt="">
+                        <span>Development Tools</span>
+
+                    </div>
+                </div>
+                <div class="section--skillset__cards">
+                    <div class="skillcard">
+                        <span class="skillcard__title"> JavaScript (ES6)</span>
+                        <p class="skillcard__content">Dynamic interactions with the latest JS version. Including
+                            REST
+                            APIs
+                            and Ajax calls, arrow functions, promises, event handling and more.</p>
+                        <img src="/app/images/javascript.svg" alt="" class="skillcard__label">
+                    </div>
+                    <div class="skillcard">
+                        <span class="skillcard__title">HTML/CSS</span>
+                        <p class="skillcard__content">Beautiful components and layouts designs by applying the
+                            latest
+                            HTML/CSS technologies, like CSS flexbox, grids and bootstrap.</p>
+                        <img src="/app/images/css.svg" alt="" class="skillcard__label">
+                    </div>
+                    <div class="skillcard">
+                        <span class="skillcard__title">Sass</span>
+                        <p class="skillcard__content">CSS preprocessor which enables the use of functions,
+                            variables
+                            and
+                            eases browser compatibility</p>
+                        <img src="app/images/sass.svg" alt="" class="skillcard__label">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="section section--projects">
+            <div class="section-title">
+                <h2>Featured Projects</h2>
+                <div class="separator"></div>
+            </div>
+            <div class="section__content">
+
+
+
+
+
+
+                <div class="project">
+                    <div class="project__wrapper">
+                        <!-- <img src="app/images/show2.svg" class="vector vector--inversed" alt=""> -->
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-sm-6 order-2 order-sm-1 ">
+                                <div class="project__info slide">
+                                    <h2>Caracas Bar <span class="emoji">🍹</span></h2>
+                                    <p>Hosting a party but don’t know what to drink tonight? Don’t worry, we got you
+                                        covered. A
+                                        fully responsive web app flooded with cocktail recipes. You can create your own
+                                        account
+                                        and
+                                        add your favorite recipes.
+                                    </p>
+                                    <p>
+                                        Built with vanilla JavaScript, Ruby on Rails, PostgreSQL, HTML, CSS, Bootstrap
+                                        and
+                                        Heroku.
+
+                                    </p>
+                                    <a class="project__button" href="http://www.hendersonsbar.fun"
+                                        target="_blank">Create an
+                                        account!</a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 order-1 order-sm-2 image_half">
+                                <div class="project__image slide">
+                                    <img src="app/images/caracasbar.png" alt="Caracas Bar showcase">
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <!-- <button class="project__button">Check it out!</button> -->
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project__wrapper project__wrapper--inversed">
+                        <!-- <img src="app/images/show1.svg" class="vector" alt=""> -->
+                        <div class="row d-flex justify-content-center">
+                            <!-- ORDER-1 ORDER-SM-2 CHANGES THE ORDER OF THE IMAGE DEPENDING ON THE SIZE OF THE SCREEN -->
+                            <div class="col-sm-6 order-1 image_half">
+                                <div class="project__image slide">
+                                    <img src="app/images/cinemapp3.svg" alt="Cinemapp showcase">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 order-2 order-sm-1">
+                                <div class="project__info slide">
+                                    <h2>Cinemapp <span class="emoji">🎥</span></h2>
+                                    <p>Perfect for cinema lovers on a tight budget! A progressive web app designed
+                                        as
+                                        mobile-first.
+                                        A cool platform where you can find undersold movie tickets for a discounted
+                                        price.
+                                        Built
+                                        with JavaScript, Ruby on Rails, PostgreSQL, HTML, CSS, jQuery and Heroku for
+                                        deployment. 
+                                    </p>
+                                    <a class="project__button" href="https://cinemappdk.herokuapp.com/"
+                                        target="_blank">Check it
+                                        out!</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <button class="project__button">Check it out!</button> -->
+                    </div>
+                </div>
+
+
+                <div class="project">
+                    <div class="project__wrapper">
+                        <!-- <img src="app/images/show3.svg" class="vector" alt=""> -->
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-sm-6 order-2 order-sm-1">
+                                <div class="project__info slide">
+                                    <h2>MammaMia <span class="emoji">👵🏻</span></h2>
+                                    <p>Because we all deserve a mom whenever and wherever we are.
+                                        Desktop-first
+                                        marketplace
+                                        app
+                                        where you can book a mom in case you lack of love and hugs.
+                                        (Educational
+                                        purpose).
+                                        Built
+                                        with Ruby on Rails, JavaScript, HTML, CSS, Bootstrap</p>
+                                    <a class="project__button" href="https://mammamiadk.herokuapp.com/"
+                                        target="_blank">Rent
+                                        a
+                                        mom!</a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 order-1 order-sm-2 image_half">
+                                <div class="project__image slide">
+                                    <img src="app/images/mammamia.svg" alt="MammaMia showcase">
+                                </div>
+                            </div>
+                            <!-- <button class="project__button">Check it out!</button> -->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <img src="app/images/footer.svg" class="footer__vector" alt="">
+            <div class="footer__wrapper">
+                <div class="socialmedia">
+                    <div onclick="location.href='#';" style="cursor: pointer;">
+                    </div>
+                    <div class="contact" onclick="location.href='https://github.com/Hendersonpinto'">
+                        <img src="app/images/github.svg" class="media_icon" alt="">
+                        <p>Check out my repositories</p>
+                    </div>
+                    <div class="contact" onclick="location.href='https://www.linkedin.com/in/henderson-pinto/'">
+                        <img src="app/images/linkedin.svg" class="media_icon" alt="">
+                        <p>Want more info?</p>
+                    </div>
+                    <div class="contact"
+                        onclick="location.href='https://open.spotify.com/playlist/1zCc7up0yPIw9rWVfD1bMA?si=H5PTNTgmQ9-Yxu8c5DVomg'">
+                        <img src="app/images/spotify.svg" class="media_icon" alt="">
+                        <p>My favorites while coding</p>
+                    </div>
+                    <div class="contact" onclick="location.href='https://www.instagram.com/henderson.pinto/'"
+                        target="_blank">
+                        <img src="app/images/instagram.svg" class="media_icon" alt="">
+                        <p>Travel and hobbies</p>
+                    </div>
+                    <div class="contact" onclick="location.href='mailto:hendersoncode@gmail.com'">
+                        <img src="app/images/mail.svg" class="media_icon" alt="">
+                        <p>Don't hesitate to contact me</p>
+                    </div>
+                </div>
+                <div class="whitespace"></div>
+            </div>
+            <span>Designed and coded with ❤️ by Henderson Pinto.</span>
+        </div>
+
+
+
+        <!-- Loading JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- Loading my own JS -->
+        <script src="/app/javascript/changeText.js"></script>
+        <script src="/app/javascript/scrollTo.js"></script>
+        <script src="/app/javascript/showSideNav.js"></script>
+        <script src="/app/javascript/slideIn.js"></script>
+        <!-- <script src="/app/javascript/hideNav.js"></script> -->
+        <script src="/app/javascript/updatecards.js"></script>
+        <!-- Loading Bootstrap JS bundle -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
+            integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
