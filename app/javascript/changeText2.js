@@ -1,4 +1,4 @@
-let messages = ["Web developer", "UX/UI Designer", "Team player", "Fullstack developer"];
+let messages = ["Front-end developer", "Back-end developer", "UX/UI Designer", "Team player"];
 const text = document.querySelector('#banner__animated-text');
 
 function changeText(element) {
