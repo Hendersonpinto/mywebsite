@@ -828,31 +828,9 @@ body .section__content {
 
 .banner #banner__animated-text {
   color: #01112D;
-  -webkit-animation: disappear 5s infinite;
-          animation: disappear 5s infinite;
-  -webkit-animation-delay: -2500ms;
-          animation-delay: -2500ms;
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
   height: 4em;
-}
-
-@-webkit-keyframes disappear {
-  0%,
-  100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-}
-
-@keyframes disappear {
-  0%,
-  100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
 }
 
 .banner__content {
