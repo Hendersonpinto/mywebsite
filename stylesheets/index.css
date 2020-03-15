@@ -839,6 +839,7 @@ body .section__content {
           animation: disappear 5s infinite;
   -webkit-animation-delay: -2500ms;
           animation-delay: -2500ms;
+  height: 4em;
 }
 
 @-webkit-keyframes disappear {

@@ -28,6 +28,7 @@
         // text-shadow: 3px 0 rgba(0, 0, 0, 0.17), 0 3px rgba(0, 0, 0, 0.122), 1px 0 rgba(0, 0, 0, 0.493), 0 -1px rgba(0, 0, 0, 0.486);
         animation: disappear 5s infinite;
         animation-delay: -2500ms;
+        height: 4em;
     }
 
     @keyframes disappear {
