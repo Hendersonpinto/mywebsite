@@ -1,9 +1,4 @@
 .sideNavbar {
-
-    @media only screen and (max-width: 576px) {
-        display: none
-    }
-
     z-index: 10000;
     height: 100vh;
     position: fixed;
@@ -22,6 +17,19 @@
     &.active {
         transform: translateX(0%);
         opacity: 1;
+    }
+
+    #arrow {
+        position: absolute;
+        right: 29%;
+        bottom: 3%;
+        transform: rotate(180deg);
+        cursor: pointer;
+        z-index: 90000000;
+    }
+
+    @media only screen and (max-width: 576px) {
+        display: none
     }
 
     &__actions {

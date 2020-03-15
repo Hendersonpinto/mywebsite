@@ -34,23 +34,6 @@ html p {
   line-height: 1.2em;
 }
 
-body #arrow {
-  position: fixed;
-  right: 3%;
-  bottom: 3%;
-  -webkit-transform: rotate(180deg) translateY(-150%);
-          transform: rotate(180deg) translateY(-150%);
-  cursor: pointer;
-  z-index: 90000000;
-  -webkit-transition: all 500ms ease-in;
-  transition: all 500ms ease-in;
-}
-
-body #arrow.active {
-  -webkit-transform: rotate(180deg) translateY(0);
-          transform: rotate(180deg) translateY(0);
-}
-
 body .section {
   position: relative;
   display: -webkit-box;
@@ -733,16 +716,26 @@ body .section__content {
   background: linear-gradient(0deg, #4ca9b1 0%, #00ffb8 100%);
 }
 
-@media only screen and (max-width: 576px) {
-  .sideNavbar {
-    display: none;
-  }
-}
-
 .sideNavbar.active {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
   opacity: 1;
+}
+
+.sideNavbar #arrow {
+  position: absolute;
+  right: 29%;
+  bottom: 3%;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  cursor: pointer;
+  z-index: 90000000;
+}
+
+@media only screen and (max-width: 576px) {
+  .sideNavbar {
+    display: none;
+  }
 }
 
 .sideNavbar__actions {
