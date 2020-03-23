@@ -836,6 +836,7 @@ body .section__content {
 .banner__content {
   width: 100vw;
   margin: auto;
+  margin-top: 150px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
