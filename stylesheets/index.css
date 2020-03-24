@@ -1132,4 +1132,51 @@ body .section__content {
     width: 100%;
   }
 }
+
+.ml4 {
+  position: relative;
+  font-weight: 900;
+  font-size: 8vw;
+  white-space: nowrap;
+  padding-left: 20%;
+  color: white;
+}
+
+.ml4 .letters {
+  position: absolute;
+  opacity: 0;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(235.64deg, #6ff1ce 0.55%, #4b76b1 97.22%);
+  z-index: 9999999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 1;
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+}
+
+.loader.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader .main {
+  position: relative;
+  width: 80%;
+  top: -10vh;
+}
 /*# sourceMappingURL=index.css.map */

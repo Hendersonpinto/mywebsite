@@ -21,6 +21,19 @@
 </head>
 
 <body>
+
+    <div class="loader">
+        <div class="main">
+    <h1 class="ml4">
+        <span class="letters letters-1">Welcome</span>
+        <span class="letters letters-2">to my world...</span>
+      </h1>
+    </div>
+</div>
+
+
+
+
     <div class="topNavbar">
         <span></span>
         <ul class="topNavbar__actions">
@@ -323,8 +336,12 @@
             </div>
         </div>
 
-        <div class="footer">
-            <img src="app/images/footer.svg" class="footer__vector" alt="">
+
+    
+          
+          
+          <div class="footer">
+              <img src="app/images/footer.svg" class="footer__vector" alt="">
             <div class="footer__wrapper">
                 <div class="socialmedia">
                     <div onclick="location.href='#';" style="cursor: pointer;">
@@ -338,10 +355,10 @@
                         <p>Want more info?</p>
                     </div>
                     <div class="contact"
-                        onclick="location.href='https://open.spotify.com/playlist/1zCc7up0yPIw9rWVfD1bMA?si=H5PTNTgmQ9-Yxu8c5DVomg'">
-                        <img src="app/images/spotify.svg" class="media_icon" alt="">
-                        <p>My favorites while coding</p>
-                    </div>
+                    onclick="location.href='https://open.spotify.com/playlist/1zCc7up0yPIw9rWVfD1bMA?si=H5PTNTgmQ9-Yxu8c5DVomg'">
+                    <img src="app/images/spotify.svg" class="media_icon" alt="">
+                    <p>My favorites while coding</p>
+                </div>
                     <div class="contact" onclick="location.href='https://www.instagram.com/henderson.pinto/'"
                         target="_blank">
                         <img src="app/images/instagram.svg" class="media_icon" alt="">
@@ -356,12 +373,15 @@
             </div>
             <span>Designed and coded with ❤️ by Henderson Pinto.</span>
         </div>
-
+        
         <script SameSite="None; Secure" src="https://static.landbot.io/landbot-widget/landbot-widget-1.0.0.js"></script>
         <script>
+                        setTimeout(function () {
+
             var myLandbot = new LandbotLivechat({
                 index: 'https://landbot.io/u/H-403279-H0GX2USXS43A8319/index.html',
             });
+        }, 5000);
         </script>
         <script>
             // Show a proactive message after 5 seconds
@@ -378,19 +398,22 @@
         </script>
 
 
-        <!-- Loading JQuery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <!-- Loading my own JS -->
-        <script src="/app/javascript/changeText2.js"></script>
-        <script src="/app/javascript/scrollTo.js"></script>
-        <script src="/app/javascript/showSideNav.js"></script>
-        <script src="/app/javascript/slideIn.js"></script>
-        <!-- <script src="/app/javascript/hideNav.js"></script> -->
-        <script src="/app/javascript/updatecards.js"></script>
-        <!-- Loading Bootstrap JS bundle -->
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
-            integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous">
+<!-- Loading JQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Loading my own JS -->
+<script src="/app/javascript/changeText2.js"></script>
+<script src="/app/javascript/scrollTo.js"></script>
+<script src="/app/javascript/showSideNav.js"></script>
+<script src="/app/javascript/slideIn.js"></script>
+<!-- <script src="/app/javascript/hideNav.js"></script> -->
+<script src="/app/javascript/updatecards.js"></script>
+<!-- Loading Bootstrap JS bundle -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
+integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous">
         </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script src="/app/javascript/animationtext.js"></script>
+<script src="/app/javascript/loader.js"></script>
 
 </body>
 

@@ -1,0 +1,23 @@
+.loader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	min-width: 100vw;
+	min-height: 100vh;
+	background: linear-gradient(235.64deg, #6ff1ce 0.55%, #4b76b1 97.22%);
+	z-index: 9999999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 1;
+	transition: all 1s ease-in;
+	&.hidden {
+		opacity: 0;
+		visibility: hidden;
+	}
+	.main {
+		position: relative;
+		width: 80%;
+		top: -10vh;
+	}
+}
