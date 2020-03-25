@@ -8,57 +8,59 @@ ml4.durationIn = 1000;
 ml4.durationOut = 600;
 ml4.delay = 500;
 
-anime
-	.timeline({ loop: false })
-	.add({
-		targets: '.ml4 .letters-1',
-		opacity: ml4.opacityIn,
-		scale: ml4.scaleIn,
-		duration: ml4.durationIn
-	})
-	.add({
-		targets: '.ml4 .letters-1',
-		opacity: 0,
-		scale: ml4.scaleOut,
-		duration: ml4.durationOut,
-		easing: 'easeInExpo',
-		delay: ml4.delay
-	})
-	.add({
-		targets: '.ml4 .letters-2',
-		opacity: ml4.opacityIn,
-		scale: ml4.scaleIn,
-		duration: ml4.durationIn
-	})
-	.add({
-		targets: '.ml4 .letters-2',
-		opacity: 0,
-		scale: ml4.scaleOut,
-		duration: ml4.durationOut,
-		easing: 'easeInExpo',
-		delay: ml4.delay
-	})
-	.add({
-		targets: '.ml4 .letters-3',
-		opacity: ml4.opacityIn,
-		scale: ml4.scaleIn,
-		duration: ml4.durationIn
-	})
-	.add({
-		targets: '.ml4 .letters-3',
-		opacity: 0,
-		scale: ml4.scaleOut,
-		duration: ml4.durationOut,
-		easing: 'easeInExpo',
-		delay: ml4.delay
-	})
-	.add({
-		targets: '.ml4',
-		opacity: 0,
-		duration: 500,
-		delay: 500
-	});
+setTimeout(function() {
+	anime
+		.timeline({ loop: false })
+		.add({
+			targets: '.ml4 .letters-1',
+			opacity: ml4.opacityIn,
+			scale: ml4.scaleIn,
+			duration: ml4.durationIn
+		})
+		.add({
+			targets: '.ml4 .letters-1',
+			opacity: 0,
+			scale: ml4.scaleOut,
+			duration: ml4.durationOut,
+			easing: 'easeInExpo',
+			delay: ml4.delay
+		})
+		.add({
+			targets: '.ml4 .letters-2',
+			opacity: ml4.opacityIn,
+			scale: ml4.scaleIn,
+			duration: ml4.durationIn
+		})
+		.add({
+			targets: '.ml4 .letters-2',
+			opacity: 0,
+			scale: ml4.scaleOut,
+			duration: ml4.durationOut,
+			easing: 'easeInExpo',
+			delay: ml4.delay
+		})
+		.add({
+			targets: '.ml4 .letters-3',
+			opacity: ml4.opacityIn,
+			scale: ml4.scaleIn,
+			duration: ml4.durationIn
+		})
+		.add({
+			targets: '.ml4 .letters-3',
+			opacity: 0,
+			scale: ml4.scaleOut,
+			duration: ml4.durationOut,
+			easing: 'easeInExpo',
+			delay: ml4.delay
+		})
+		.add({
+			targets: '.ml4',
+			opacity: 0,
+			duration: 500,
+			delay: 500
+		});
+}, 1000);
 
 setTimeout(function() {
 	loader.classList.add('hidden');
-}, 4000);
+}, 5000);
