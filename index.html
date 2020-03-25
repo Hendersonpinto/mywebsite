@@ -380,11 +380,8 @@
 
             var myLandbot = new LandbotLivechat({
                 index: 'https://landbot.io/u/H-403279-H0GX2USXS43A8319/index.html',
-            });
-        }, 5000);
-        </script>
-        <script>
-            // Show a proactive message after 5 seconds
+            })
+            
             setTimeout(function () {
                 myLandbot.sendProactive({
                     "message": "Reach me out here or give me your feedback...",
@@ -394,12 +391,18 @@
                         "hide_textbox": true
                     }
                 });
-            }, 5000);
+            }, 15000);;
+        }, 8000);
+                    // Show a proactive message after 5 seconds
+                    
         </script>
+
 
 
 <!-- Loading JQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script src="/app/javascript/animationtext.js"></script>
 <!-- Loading my own JS -->
 <script src="/app/javascript/changeText2.js"></script>
 <script src="/app/javascript/scrollTo.js"></script>
@@ -411,9 +414,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
 integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous">
         </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-<script src="/app/javascript/animationtext.js"></script>
-<script src="/app/javascript/loader.js"></script>
 
 </body>
 
