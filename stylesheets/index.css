@@ -236,6 +236,10 @@ body .section__content {
   font-size: 14px;
 }
 
+.project .project__wrapper .project__info .built {
+  margin-right: 5px;
+}
+
 .project .project__wrapper .project__info .project__button {
   position: relative;
   margin: auto;
@@ -318,6 +322,10 @@ body .section__content {
   font-family: Montserrat;
   font-weight: 400;
   font-size: 14px;
+}
+
+.project .project__wrapper--inversed .project__info .built {
+  margin-right: 5px;
 }
 
 .project .project__wrapper--inversed .project__image {
