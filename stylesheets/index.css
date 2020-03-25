@@ -221,8 +221,9 @@ body .section__content {
 }
 
 .project .project__wrapper .project__info h2 {
-  font-family: Montserrat;
+  font-family: Montserrat Alternates;
   font-size: 28px;
+  font-weight: 400;
 }
 
 .project .project__wrapper .project__info h2:first-letter {
@@ -304,8 +305,9 @@ body .section__content {
 }
 
 .project .project__wrapper--inversed .project__info h2 {
-  font-family: Montserrat;
+  font-family: Montserrat Alternates;
   font-size: 28px;
+  font-weight: 400;
 }
 
 .project .project__wrapper--inversed .project__info h2:first-letter {
@@ -820,13 +822,14 @@ body .section__content {
 .banner h1 {
   font-family: 'Montserrat Alternates';
   font-size: 56px;
-  font-weight: 700;
+  font-weight: 400;
   color: white;
   text-align: center;
   margin: 0;
 }
 
 .banner #banner__animated-text {
+  font-weight: 700;
   color: #01112D;
   -webkit-transition: all 2s ease-in-out;
   transition: all 2s ease-in-out;
@@ -1135,7 +1138,8 @@ body .section__content {
 
 .ml4 {
   position: relative;
-  font-weight: 900;
+  font-weight: 400;
+  font-family: Montserrat Alternates;
   font-size: 8vw;
   white-space: nowrap;
   padding-left: 20%;
