@@ -47,7 +47,6 @@ body .section {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 100px;
-  overflow: hidden;
 }
 
 body .section .section-title h2 {
@@ -406,7 +405,7 @@ body .section__content {
   }
   .project .project__wrapper .project__image #forlyshowcase {
     width: 80%;
-    height: 130px;
+    height: 120px;
   }
   .project .project__wrapper .project__info {
     -webkit-transform: translateY(30%);

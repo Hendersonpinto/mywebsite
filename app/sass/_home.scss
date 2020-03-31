@@ -1,6 +1,9 @@
-$colors: (primary: #005dff, accent: #fff6bb);
+$colors: (
+	primary: #005dff,
+	accent: #fff6bb
+);
 
-@function color ($color-name) {
+@function color($color-name) {
 	@return map-get($colors, $color-name);
 }
 
@@ -40,7 +43,6 @@ html {
 }
 
 body {
-
 	// #arrow {
 	// 	position: fixed;
 	// 	right: 3%;
@@ -55,8 +57,6 @@ body {
 	// 		transform: rotate(180deg) translateY(0);
 	// 	}
 	// }
-
-
 
 	// #bg {
 	//     // clip-path: polygon(100% 0, 100% 35%, 40% 100%, 0 100%, 0 0);
@@ -76,9 +76,7 @@ body {
 		align-items: center;
 		$this: &;
 		margin-top: 100px;
-		overflow: hidden;
-
-
+		// overflow: hidden;
 
 		.section-title {
 			h2 {
@@ -89,8 +87,6 @@ body {
 				font-weight: 400;
 			}
 
-
-
 			.separator {
 				margin: auto;
 				width: 50%;
@@ -99,9 +95,6 @@ body {
 			}
 		}
 
-
-
-
 		&__content {
 			width: 80%;
 			display: flex;
@@ -109,7 +102,6 @@ body {
 			margin: 70px auto;
 			align-items: center;
 		}
-
 
 		@media only screen and (max-width: 576px) {
 			margin-top: 30px;
@@ -124,12 +116,10 @@ body {
 		}
 
 		@media only screen and (min-width: 577px) and (max-width: 992px) {
-
 			&__content {
 				width: 80%;
 				margin: 50px auto;
 			}
-
 		}
 	}
 }
