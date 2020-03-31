@@ -404,6 +404,10 @@ body .section__content {
     width: 80%;
     height: 150px;
   }
+  .project .project__wrapper .project__image #forlyshowcase {
+    width: 80%;
+    height: 130px;
+  }
   .project .project__wrapper .project__info {
     -webkit-transform: translateY(30%);
             transform: translateY(30%);
