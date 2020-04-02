@@ -1042,6 +1042,10 @@ body .section__content {
   }
 }
 
+.section--skillset {
+  overflow: hidden;
+}
+
 .section--skillset .vector {
   z-index: -10;
   position: absolute;
