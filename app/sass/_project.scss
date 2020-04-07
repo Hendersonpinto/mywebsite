@@ -163,6 +163,10 @@
 					width: 80%;
 					height: auto;
 				}
+				#forlyshowcase {
+					width: 100%;
+					// height: 120px;
+				}
 
 				@media only screen and (max-width: 576px) {
 					.cinemapp {
@@ -201,12 +205,13 @@
 				transition: all 1000ms ease-in;
 
 				img {
-					width: 80%;
-					height: 150px;
+					width: 100%;
 				}
 				#forlyshowcase {
-					width: 80%;
-					height: 120px;
+					width: 100%;
+				}
+				#caracasshowcase {
+					width: 100%;
 				}
 			}
 

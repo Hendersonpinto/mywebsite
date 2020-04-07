@@ -354,6 +354,10 @@ body .section__content {
   height: auto;
 }
 
+.project .project__wrapper--inversed .project__image #forlyshowcase {
+  width: 100%;
+}
+
 @media only screen and (max-width: 576px) {
   .project .project__wrapper--inversed .project__image .cinemapp {
     width: 70%;
@@ -400,12 +404,13 @@ body .section__content {
     transition: all 1000ms ease-in;
   }
   .project .project__wrapper .project__image img {
-    width: 80%;
-    height: 150px;
+    width: 100%;
   }
   .project .project__wrapper .project__image #forlyshowcase {
-    width: 80%;
-    height: 120px;
+    width: 100%;
+  }
+  .project .project__wrapper .project__image #caracasshowcase {
+    width: 100%;
   }
   .project .project__wrapper .project__info {
     -webkit-transform: translateY(30%);
@@ -810,7 +815,7 @@ body .section__content {
 }
 
 .banner {
-  height: 90vh;
+  height: 95vh;
   background: url("../app/images/Vector.svg") no-repeat;
   background-position: center;
   background-size: cover;
