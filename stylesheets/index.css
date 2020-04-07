@@ -285,6 +285,10 @@ body .section__content {
   height: auto;
 }
 
+.project .project__wrapper .project__image #caracasshowcase {
+  width: 100%;
+}
+
 .project .project__wrapper--inversed .project__info {
   -webkit-transform: translateX(30%);
           transform: translateX(30%);
@@ -408,9 +412,11 @@ body .section__content {
   }
   .project .project__wrapper .project__image #forlyshowcase {
     width: 100%;
+    height: 175px;
   }
   .project .project__wrapper .project__image #caracasshowcase {
     width: 100%;
+    height: 175px;
   }
   .project .project__wrapper .project__info {
     -webkit-transform: translateY(30%);
