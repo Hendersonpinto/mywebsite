@@ -1,10 +1,10 @@
 $colors: (
-	primary: #005dff,
-	accent: #fff6bb
+  primary: #005dff,
+  accent: #fff6bb,
 );
 
 @function color($color-name) {
-	@return map-get($colors, $color-name);
+  @return map-get($colors, $color-name);
 }
 
 // * {
@@ -13,113 +13,113 @@ $colors: (
 
 *::before,
 *::after {
-	box-sizing: content-box; // 1
+  box-sizing: content-box; // 1
 }
 
 body,
 html {
-	height: 100%;
-	margin: 0;
-	color: white;
-	padding: 0;
-	color: black;
+  height: 100%;
+  margin: 0;
+  color: white;
+  padding: 0;
+  color: black;
 
-	a {
-		text-decoration: none;
-		color: black;
+  a {
+    text-decoration: none;
+    color: black;
 
-		&:hover {
-			text-decoration: none;
-		}
-	}
+    &:hover {
+      text-decoration: none;
+    }
+  }
 
-	p {
-		font-family: Montserrat;
-		font-size: 14px;
-		font-weight: 500;
-		margin-block-start: 1em;
-		line-height: 1.2em;
-	}
+  p {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    margin-block-start: 1em;
+    line-height: 1.2em;
+  }
 }
 
 body {
-	// #arrow {
-	// 	position: fixed;
-	// 	right: 3%;
-	// 	bottom: 3%;
-	// 	// transform: translateY(100%);
-	// 	transform: rotate(180deg) translateY(-150%);
-	// 	cursor: pointer;
-	// 	z-index: 90000000;
-	// 	transition: all 500ms ease-in;
+  // #arrow {
+  // 	position: fixed;
+  // 	right: 3%;
+  // 	bottom: 3%;
+  // 	// transform: translateY(100%);
+  // 	transform: rotate(180deg) translateY(-150%);
+  // 	cursor: pointer;
+  // 	z-index: 90000000;
+  // 	transition: all 500ms ease-in;
 
-	// 	&.active {
-	// 		transform: rotate(180deg) translateY(0);
-	// 	}
-	// }
+  // 	&.active {
+  // 		transform: rotate(180deg) translateY(0);
+  // 	}
+  // }
 
-	// #bg {
-	//     // clip-path: polygon(100% 0, 100% 35%, 40% 100%, 0 100%, 0 0);
-	//     // background-color: color(primary);
-	//     height: 100%;
-	//     width: 100%;
-	//     // position: absolute;
-	//     // z-index: -1;
-	// }
+  // #bg {
+  //     // clip-path: polygon(100% 0, 100% 35%, 40% 100%, 0 100%, 0 0);
+  //     // background-color: color(primary);
+  //     height: 100%;
+  //     width: 100%;
+  //     // position: absolute;
+  //     // z-index: -1;
+  // }
 
-	.section {
-		position: relative;
-		// min-height: 100vh;
-		display: flex;
-		flex-direction: column;
-		// justify-content: center;
-		align-items: center;
-		$this: &;
-		margin-top: 100px;
-		// overflow: hidden;
+  .section {
+    position: relative;
+    // min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    $this: &;
+    margin-top: 100px;
+    // overflow: hidden;
 
-		.section-title {
-			h2 {
-				font-family: Montserrat;
-				font-size: 32px;
-				color: rgba(0, 0, 0, 0.75);
-				margin: 0;
-				font-weight: 400;
-			}
+    .section-title {
+      h2 {
+        font-family: Montserrat;
+        font-size: 32px;
+        color: rgba(0, 0, 0, 0.75);
+        margin: 0;
+        font-weight: 400;
+      }
 
-			.separator {
-				margin: auto;
-				width: 50%;
-				height: 5px;
-				background-color: $mygold;
-			}
-		}
+      .separator {
+        margin: auto;
+        width: 50%;
+        height: 5px;
+        background-color: $mygold;
+      }
+    }
 
-		&__content {
-			width: 80%;
-			display: flex;
-			justify-content: center;
-			margin: 70px auto;
-			align-items: center;
-		}
+    &__content {
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      margin: 70px auto 10px auto;
+      align-items: center;
+    }
 
-		@media only screen and (max-width: 576px) {
-			margin-top: 30px;
-			width: 100%;
-			min-height: 0px;
+    @media only screen and (max-width: 576px) {
+      margin-top: 30px;
+      width: 100%;
+      min-height: 0px;
 
-			.section-title {
-				h2 {
-					font-size: 24px;
-				}
-			}
-		}
+      .section-title {
+        h2 {
+          font-size: 24px;
+        }
+      }
+    }
 
-		@media only screen and (min-width: 577px) and (max-width: 992px) {
-			&__content {
-				width: 80%;
-				margin: 50px auto;
-			}
-		}
-	}
+    @media only screen and (min-width: 577px) and (max-width: 992px) {
+      &__content {
+        width: 80%;
+        margin: 50px auto;
+      }
+    }
+  }
 }

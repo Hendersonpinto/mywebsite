@@ -22,7 +22,7 @@ const technologies = {
       "Beautiful components and layouts designs by applying the latest HTML/CSS technologies, like CSS flexbox, grids and bootstrap.",
       "CSS preprocessor which enables the use of functions, variables and eases browser compatibility",
     ],
-    logos: ["javascript.svg", "css.svg", "sass.svg"],
+    logos: ["react.png", "css.svg", "sass.svg"],
   },
   ux: {
     title: [
