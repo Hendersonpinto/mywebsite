@@ -533,7 +533,7 @@ body .section__content {
 .footer .contact p {
   font-size: 14px;
   margin: 10px;
-  color: #CBCBCB;
+  color: #cbcbcb;
 }
 
 .footer .contact .media_icon {
@@ -569,7 +569,7 @@ body .section__content {
   }
   .footer .contact p {
     font-size: 10px;
-    color: #CBCBCB;
+    color: #cbcbcb;
     margin: 3px;
   }
   .footer .contact .media_icon {
@@ -605,7 +605,7 @@ body .section__content {
   }
   .footer .contact p {
     font-size: 12px;
-    color: #CBCBCB;
+    color: #cbcbcb;
     margin: 4px;
   }
   .footer .contact .media_icon {
@@ -616,12 +616,6 @@ body .section__content {
     right: 7%;
     font-size: 12px;
     color: rgba(0, 0, 0, 0.8);
-  }
-}
-
-@media only screen and (min-width: 993px) {
-  .footer {
-    overflow: hidden;
   }
 }
 
@@ -1157,6 +1151,9 @@ body .section__content {
 }
 
 @media only screen and (min-width: 993px) {
+  .section--skillset {
+    overflow: visible;
+  }
   .section--skillset__cards {
     width: 100%;
   }

@@ -1,107 +1,108 @@
 .section--skillset {
-	overflow: hidden;
-	.vector {
-		z-index: -10;
-		position: absolute;
-		bottom: 10%;
-		left: 25%;
-		width: 50%;
-	}
+  overflow: hidden;
+  .vector {
+    z-index: -10;
+    position: absolute;
+    bottom: 10%;
+    left: 25%;
+    width: 50%;
+  }
 
-	&__actions {
-		margin-bottom: 10px;
+  &__actions {
+    margin-bottom: 10px;
 
-		width: 40%;
-		display: flex;
-		justify-content: space-around;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
 
-		.skill {
-			position: relative;
-			width: 200px;
-			transition: all 1s ease;
-			text-align: center;
-			cursor: pointer;
+    .skill {
+      position: relative;
+      width: 200px;
+      transition: all 1s ease;
+      text-align: center;
+      cursor: pointer;
 
-			span {
-				width: 150%;
-				position: absolute;
-				top: -10%;
-				left: -25%;
-				transition: all 1s ease;
-				opacity: 0;
-				font-family: Montserrat;
-				font-size: 10px;
-				text-align: center;
-			}
+      span {
+        width: 150%;
+        position: absolute;
+        top: -10%;
+        left: -25%;
+        transition: all 1s ease;
+        opacity: 0;
+        font-family: Montserrat;
+        font-size: 10px;
+        text-align: center;
+      }
 
-			> img {
-				width: 100%;
-				height: auto;
-			}
+      > img {
+        width: 100%;
+        height: auto;
+      }
 
-			&:hover {
-				transform: scale(1.1);
+      &:hover {
+        transform: scale(1.1);
 
-				span {
-					opacity: 1;
-				}
-			}
+        span {
+          opacity: 1;
+        }
+      }
 
-			&.active {
-				transform: scale(1.3);
+      &.active {
+        transform: scale(1.3);
 
-				span {
-					opacity: 1;
-				}
-			}
-		}
-	}
+        span {
+          opacity: 1;
+        }
+      }
+    }
+  }
 
-	&__cards {
-		z-index: 10;
-		width: 150%;
-		display: flex;
-		justify-content: space-around;
-		transition: all 500ms ease;
-	}
+  &__cards {
+    z-index: 10;
+    width: 150%;
+    display: flex;
+    justify-content: space-around;
+    transition: all 500ms ease;
+  }
 
-	@media only screen and (max-width: 576px) {
-		&__actions {
-			width: 80%;
+  @media only screen and (max-width: 576px) {
+    &__actions {
+      width: 80%;
 
-			.skill {
-				span {
-					font-size: 8px;
-					top: -20%;
-				}
-			}
-		}
+      .skill {
+        span {
+          font-size: 8px;
+          top: -20%;
+        }
+      }
+    }
 
-		&__cards {
-			justify-content: center;
-		}
-	}
+    &__cards {
+      justify-content: center;
+    }
+  }
 
-	@media only screen and (min-width: 577px) and (max-width: 992px) {
-		&__actions {
-			width: 50vw;
+  @media only screen and (min-width: 577px) and (max-width: 992px) {
+    &__actions {
+      width: 50vw;
 
-			// .skill {
-			//     span {
-			//         font-size: 8px;
-			//         top: -20%
-			//     }
-			// }
-		}
+      // .skill {
+      //     span {
+      //         font-size: 8px;
+      //         top: -20%
+      //     }
+      // }
+    }
 
-		&__cards {
-			width: 80vw;
-		}
-	}
+    &__cards {
+      width: 80vw;
+    }
+  }
 
-	@media only screen and (min-width: 993px) {
-		&__cards {
-			width: 100%;
-		}
-	}
+  @media only screen and (min-width: 993px) {
+    overflow: visible;
+    &__cards {
+      width: 100%;
+    }
+  }
 }
