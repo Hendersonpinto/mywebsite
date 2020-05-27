@@ -238,6 +238,11 @@ body .section__content {
   font-size: 14px;
 }
 
+.project .project__wrapper .project__info p.note {
+  color: #ff5e22;
+  font-weight: 600;
+}
+
 .project .project__wrapper .project__info .built {
   margin-right: 5px;
 }
@@ -481,6 +486,32 @@ body .section__content {
 @media only screen and (min-width: 993px) {
   .project .project__wrapper .project__image {
     width: 100%;
+  }
+  .project .project__wrapper .project__info {
+    width: 100%;
+  }
+  .project .project__wrapper .image_half {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .project .project__wrapper .project__image img {
+    width: 100%;
+  }
+  .project .project__wrapper .project__image #forlyshowcase {
+    width: 80%;
+  }
+  .project .project__wrapper .project__image #caracasshowcase {
+    width: 90%;
   }
   .project .project__wrapper .project__info {
     width: 100%;

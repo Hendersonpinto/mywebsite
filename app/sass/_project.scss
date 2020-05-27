@@ -56,6 +56,11 @@
         font-family: Montserrat;
         font-weight: 400;
         font-size: 14px;
+
+        &.note {
+          color: #ff5e22;
+          font-weight: 600;
+        }
       }
 
       .built {
@@ -277,6 +282,29 @@
     @media only screen and (min-width: 993px) {
       .project__image {
         width: 100%;
+      }
+
+      .project__info {
+        width: 100%;
+      }
+
+      .image_half {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    @media only screen and (min-width: 1440px) {
+      .project__image {
+        img {
+          width: 100%;
+        }
+        #forlyshowcase {
+          width: 80%;
+        }
+        #caracasshowcase {
+          width: 90%;
+        }
       }
 
       .project__info {
